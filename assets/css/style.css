@@ -1293,7 +1293,7 @@ textarea.form-input::-webkit-resizer {
   }
   /** * #RESUME */
    .custom-link {
-      color: #ffdc70;
+      color: var(--vegas-gold);
   }
    .timeline-list {
        margin-left: 65px;
@@ -1574,4 +1574,5 @@ textarea.form-input::-webkit-resizer {
    .timeline-text {
        max-width: 700px;
   }
+
 }

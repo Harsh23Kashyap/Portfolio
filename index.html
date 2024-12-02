@@ -80,6 +80,17 @@
                      </div>
                      
                      </li> -->
+                  <!-- New Download Resume Button -->
+                  <!-- New Resume Options -->
+                  <li class="contact-item">
+                     <div class="icon-box">
+                        <ion-icon name="document-outline"></ion-icon>
+                     </div>
+                     <div class="contact-info">
+                        <p class="contact-title">Resume</p>
+                        <a href="./assets/documents/Harsh_Kashyap_Resume.pdf" class="contact-link" target="_blank">View / Download</a>
+                     </div>
+                  </li>
                   <li class="contact-item">
                      <div class="icon-box">
                         <ion-icon name="people"></ion-icon>
@@ -424,10 +435,19 @@
             <!--
                - #RESUME
                -->
-            <article class="resume" data-page="resume">
-               <header>
-                  <h2 class="h2 article-title">Resume</h2>
-               </header>
+               <article class="resume" data-page="resume">
+                  <header>
+                     <h2 class="h2 article-title">Resume</h2>
+                     <!-- View Resume Button -->
+                     <div class="column">
+                        <a href="./assets/documents/Harsh_Kashyap_Resume.pdf" target="_blank">
+                           <div class="icon-box-mail">
+                              <i class="ion ion-eye"></i> &nbsp;&nbsp;View Resume
+                           </div>
+                        </a>
+                     </div>
+                  </header>
+                  <br>
                <section class="timeline">
                   <!-- Full-Time Experience Section -->
                   <div class="title-wrapper">
@@ -544,12 +564,12 @@
                                  </a>                    
                               </h4>
                            </div>
-                           <div style="display: flex; align-items: center; gap: 5px; white-space: nowrap; color: inherit;">
+                           <div style="display: flex; align-items: center; gap: 5px; white-space: nowrap; color: var(--vegas-gold);">
                               <a href="https://www.nyu.edu/" target="_blank" class="custom-link">New York University | </a>
                               <a href="https://www.dietnerd.org" target="_blank" class="custom-link">www.dietnerd.org
                               </a>
                               <a href="https://www.dietnerd.org" target="_blank" class="custom-link">
-                                 <ion-icon name="arrow-forward-outline" style="font-size: 14px; vertical-align: middle;"></ion-icon>
+                                 <span style="margin-left: 5px; font-size: 1.2em;">&#8599;</span>
                               </a>
                            </div>
                         </div>
@@ -767,6 +787,30 @@
                            <p class="project-category">Data Visualisation</p>
                         </a>
                      </li>
+                     <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="https://github.com/Harsh23Kashyap/CodeClue">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/codeclue.webp" alt="Leetcode" loading="lazy">
+                           </figure>
+                           <h3 class="project-title">CodeClue</h3>
+                           <p class="project-category">Web Development/ AI APIs</p>
+                        </a>
+                     </li>
+                     <li class="project-item  active" data-filter-item data-category="web development">
+                        <a href="https://github.com/Harsh23Kashyap/Emailer">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/emailer.webp" alt="Emailer" loading="lazy">
+                           </figure>
+                           <h3 class="project-title">Emailer</h3>
+                           <p class="project-category">Selenium/ Automation</p>
+                        </a>
+                     </li>
                      <li class="project-item  active" data-filter-item data-category="app development">
                       <a href="https://github.com/Harsh23Kashyap/EverythingFinance">
                          <figure class="project-img">
@@ -833,22 +877,63 @@
                <header>
                   <h2 class="h2 article-title">Others</h2>
                </header>
-               <section >
-                  <ul class="project-list">
-                     <li class="project-item  active" data-filter-item data-category="web development">
-                        <a href="https://topmate.io/harsh_kashyap/744095">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/Notes.png" alt="finance" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Core Subjects Notes</h3>
-                           <p class="project-category">Comprising notes of DSA, OS, OOPS, DBMS, CN, System Design, Concurrency etc</p>
-                        </a>
-                     </li>
-                  </ul>
+               <section>
+                  <div class="project-container">
+                     <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="web development">
+                           <a href="https://topmate.io/harsh_kashyap/744095">
+                              <figure class="project-img">
+                                 <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                 </div>
+                                 <img src="./assets/images/Corenotes.webp" alt="finance" loading="lazy">
+                              </figure>
+                              <h3 class="project-title">Core Subjects Notes</h3>
+                              <p class="project-category">Comprising notes of OS, OOPS, DBMS, CN, Concurrency etc</p>
+                           </a>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="web development">
+                           <a href="https://topmate.io/harsh_kashyap/1097304">
+                              <figure class="project-img">
+                                 <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                 </div>
+                                 <img src="./assets/images/systemdesignnotes.webp" alt="System Design" loading="lazy">
+                              </figure>
+                              <h3 class="project-title">System Design Notes</h3>
+                              <p class="project-category">Comprising of each and every detailed aspect of system design in detail</p>
+                           </a>
+                        </li>
+                     </ul>
+                     <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="web development">
+                           <a href="https://topmate.io/harsh_kashyap/854660">
+                              <figure class="project-img">
+                                 <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                 </div>
+                                 <img src="./assets/images/dsanotes.webp" alt="DSA" loading="lazy">
+                              </figure>
+                              <h3 class="project-title">DSA handwritten Notes</h3>
+                              <p class="project-category">Detailed implementation of DSA concepts from A to Z to master DSA skills</p>
+                           </a>
+                        </li>
+                        <li class="project-item active" data-filter-item data-category="web development">
+                           <a href="">
+                              <figure class="project-img">
+                                 <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                 </div>
+                                 <img src="./assets/images/grenotes.webp" alt="GRE" loading="lazy">
+                              </figure>
+                              <h3 class="project-title">GRE handwritten Notes</h3>
+                              <p class="project-category">Updating Soon</p>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
                </section>
+               
             </article>
             <!--
                - #BLOG
@@ -1210,7 +1295,13 @@
                   </div>
                   <ol class="timeline-list">
                      <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">Thapar Institute Counselling Cell </h4>
+                        <h4 class="h4 timeline-item-title">
+                           <a href="https://www.instagram.com/ticc.official/" target="_blank" style="text-decoration: none; color: inherit; display: inline-flex; align-items: center;">
+                              Thapar Institute Counselling Cell
+                              <span style="margin-left: 5px; font-size: 1.2em;">&#8599;</span>
+                           </a>
+                        </h4>
+                        
                         <h4 class="h4 timeline-item-title"></h4>
                         <span>Member Of The Board Of Advisors | Jan 2023 — July 2023</span>
                         <p class="timeline-text">
@@ -1256,7 +1347,12 @@
                         </a>
                      </li>
                      <li class="timeline-item">
-                        <h4 class="h4 timeline-item-title">DiiDi </h4>
+                        <h4 class="h4 timeline-item-title">
+                           <a href="https://www.linkedin.com/company/diidi/" target="_blank" style="text-decoration: none; color: inherit; display: inline-flex; align-items: center;">
+                              DiiDi
+                              <span style="margin-left: 5px; font-size: 1.2em;">&#8599;</span>
+                           </a> 
+                        </h4>
                         <h4 class="h4 timeline-item-title"></h4>
                         <span>Member  | Dec 2021 — Present</span>
                         <p class="timeline-text">
@@ -1273,6 +1369,19 @@
                               <img src="./assets/images/Diidi4.jpeg" alt="DiiDi" loading="lazy">
                            </figure>
                         </a>
+                        <li class="timeline-item">
+                           <h4 class="h4 timeline-item-title">
+                              <a href="https://www.idiausa.org" target="_blank" style="text-decoration: none; color: inherit; display: inline-flex; align-items: center;">
+                                 IDIA
+                                 <span style="margin-left: 5px; font-size: 1.2em;">&#8599;</span>
+                              </a>
+                           </h4>
+                           <h4 class="h4 timeline-item-title"></h4>
+                           <span>Member | Present</span>
+                           <p class="timeline-text">
+                           <ul class="white-dot">
+                              <li>Developing a comprehensive app for IDIA members and volunteers to seamlessly coordinate, plan, and participate in events. The app will provide real-time member updates, volunteer opportunities, and information on shop locations. <br>Additionally, it will feature media content and insights from IDIA events, along with empowering blogs curated by women for women.</li>
+                           </ul>
                   </ol>
                </section>
                <section class="timeline">
@@ -1395,10 +1504,8 @@
                      <style>.mapouter{position:relative;text-align:right;width:100%;height:424px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:424px;}.gmap_iframe {height:424px!important;}</style>
                   </div>
                </section>
-               <header>
+               <header style="display: flex; justify-content: space-between; align-items: center;">
                   <h2 class="h2 article-title">Let's Connect</h2>
-               </header>
-               <section>
                   <div class="container">
                      <div class="column">
                         <a href="mailto:harsh.kashyap2001@gmail.com?subject=Exciting%20Opportunity:%20Join%20Our%20Team%20and%20Connect!&body=Dear%20Harsh,%0D%0A%0D%0AI%20hope%20this%20email%20finds%20you%20well.%20I%20recently%20came%20across%20your%20impressive%20profile%20as%20a%20software%20engineer,%20and%20I%20must%20say,%20your%20experience%20and%20skills%20caught%20our%20attention.%0D%0A%0D%0AWe%20are%20always%20on%20the%20lookout%20for%20talented%20professionals%20like%20yourself%20who%20can%20contribute%20to%20our%20dynamic%20team.%20We%20believe%20that%20your%20expertise%20aligns%20perfectly%20with%20our%20company's%20goals%20and%20vision.%20After%20thoroughly%20reviewing%20your%20work%20and%20accomplishments,%20we%20are%20genuinely%20interested%20in%20connecting%20with%20you%20to%20discuss%20potential%20opportunities.%0D%0A%0D%0AWe%20admire%20your%20passion%20for%20software%20engineering%20and%20the%20exceptional%20projects%20you%20have%20undertaken.%20Our%20company%20values%20individuals%20who%20are%20motivated,%20innovative,%20and%20constantly%20seeking%20to%20push%20the%20boundaries%20of%20technology.%20We%20believe%20that%20you%20possess%20these%20qualities,%20and%20we%20would%20love%20to%20have%20you%20join%20our%20team.%0D%0A%0D%0AIf%20you%20are%20open%20to%20exploring%20new%20career%20prospects,%20we%20would%20be%20delighted%20to%20schedule%20a%20conversation%20with%20you%20at%20your%20convenience.%20We%20would%20like%20to%20discuss%20the%20exciting%20projects%20we%20are%20working%20on,%20as%20well%20as%20the%20opportunities%20for%20professional%20growth%20and%20development.%0D%0A%0D%0APlease%20let%20me%20know%20if%20you%20are%20interested%20in%20connecting,%20and%20we%20can%20arrange%20a%20call%20or%20a%20meeting.%20I%20am%20confident%20that%20our%20discussion%20will%20provide%20you%20with%20valuable%20insights%20into%20the%20possibilities%20that%20lie%20ahead.%0D%0A%0D%0AThank%20you%20for%20considering%20this%20opportunity.%20We%20eagerly%20await%20your%20response%20and%20the%20chance%20to%20connect%20with%20you%20further.%20If%20you%20have%20any%20questions%20in%20the%20meantime,%20please%20do%20not%20hesitate%20to%20reach%20out.%0D%0A%0D%0AWarm%20regards,">
@@ -1407,14 +1514,9 @@
                            </div>
                         </a>
                      </div>
-                     <div class="column">
-                        <a href="https://topmate.io/harsh_kashyap">
-                           <div class="icon-box-mail">
-                              <i class="ion ion-people"></i> &nbsp;&nbsp;Topmate
-                           </div>
-                        </a>
-                     </div>
                   </div>
+               </header>
+               
                   <!-- <a href="mailto:harsh.kashyap2001@gmail.com?subject=Interested%20in%20your%20profile&body=Lets%20connect">Click here to send an email</a> -->
                </section>
                <header>
@@ -1445,6 +1547,34 @@
                         <div class="blog-content">
                            <div class="blog-meta">
                               <p class="blog-category">LeetCode</p>
+                              <span class="dot"></span>
+                              <p class="blog-category">Harsh23Kashyap</p>
+                           </div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="blog-post-item">
+                     <a href="https://topmate.io/harsh_kashyap">
+                        <figure class="blog-banner-box">
+                           <img src="./assets/images/topmate.png" alt="Topmate" loading="lazy">
+                        </figure>
+                        <div class="blog-content">
+                           <div class="blog-meta">
+                              <p class="blog-category">LeetCode</p>
+                              <span class="dot"></span>
+                              <p class="blog-category">Over 300 bookings</p>
+                           </div>
+                        </div>
+                     </a>
+                  </li>
+                  <li class="blog-post-item">
+                     <a href="https://github.com/Harsh23Kashyap/">
+                        <figure class="blog-banner-box">
+                           <img src="./assets/images/GithubPortfolio.png" alt="Github" loading="lazy">
+                        </figure>
+                        <div class="blog-content">
+                           <div class="blog-meta">
+                              <p class="blog-category">Github</p>
                               <span class="dot"></span>
                               <p class="blog-category">Harsh23Kashyap</p>
                            </div>
