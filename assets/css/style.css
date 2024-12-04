@@ -1621,10 +1621,6 @@ a.custom-link:active {
    text-decoration: none !important; /* Ensure no underline */
 }
 
-/* Override default browser styles for all anchor tags globally, if needed */
-a {
-   color: var(--vegas-gold) !important; /* Optional: Universal anchor tag override */
-}
 
 /* Mobile-specific styles, if required */
 @media (max-width: 768px) {
