@@ -26,28 +26,41 @@
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
    </head>
    <body>
+      <div class="sparkling-background"></div>
+
       <!--
          - #MAIN
          -->
       <main>
+            
          <!--
             - #SIDEBAR
             -->
-         <aside class="sidebar" data-sidebar>
-            <div class="sidebar-info">
-               <figure class="avatar-box">
-                  <img src="./assets/images/my-avatar-.png" alt="Richard hanrick" width="80">
-               </figure>
-               <div class="info-content">
-                  <h1 class="name" title="Harsh Kashyap">Harsh Kashyap</h1>
-                  <p class="title">Innovating at Apple </p>
+            <aside class="sidebar" data-sidebar>
+               <div class="sidebar-info">
+                 <figure class="avatar-box">
+                   <img src="./assets/images/my-avatar-.png" alt="Harsh Kashyap" width="80">
+                 </figure>
+                 <div class="info-content">
+                   <h1 class="name" title="Harsh Kashyap">Harsh Kashyap</h1>
+                   <p class="title">Innovating at Apple </p>
+                 </div>
+                 <div class="switch-container">
+                   <div class="switch">
+                     <input type="checkbox" class="switch__input" id="Switch">
+                     <label class="switch__label" for="Switch">
+                       <span class="switch__indicator"></span>
+                     </label>
+                   </div>
+                 </div>
+                 <button class="info_more-btn" data-sidebar-btn>
+                   <span>Show Contacts</span>
+                   <ion-icon name="chevron-down"></ion-icon>
+                 </button>
                </div>
-               <button class="info_more-btn" data-sidebar-btn>
-                  <span>Show Contacts</span>
-                  <ion-icon name="chevron-down"></ion-icon>
-               </button>
-            </div>
-            <div class="sidebar-info_more">
+                       
+             
+               <div class="sidebar-info_more">
                <div class="separator"></div>
                <ul class="contacts-list">
                   <li class="contact-item">

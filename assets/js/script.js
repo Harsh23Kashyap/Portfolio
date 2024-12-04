@@ -1,6 +1,3 @@
-'use strict';
-
-
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -14,6 +11,45 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
+const themeToggleInput = document.querySelector(".switch__input");
+const rootElement = document.documentElement;
+const switchIcon = document.querySelector("#SwitchIcon");
+
+themeToggleInput.addEventListener("change", () => {
+  if (themeToggleInput.checked) {
+    rootElement.classList.add("light-mode");
+    switchIcon.style.backgroundImage = 'radial-gradient(circle, rgba(255, 223, 0, 1) 60%, rgba(255, 223, 0, 0) 100%)';
+  } else {
+    rootElement.classList.remove("light-mode");
+    switchIcon.style.backgroundImage = 'none';
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (rootElement.classList.contains("light-mode")) {
+    themeToggleInput.checked = true;
+    switchIcon.style.backgroundImage = 'radial-gradient(circle, rgba(255, 223, 0, 1) 60%, rgba(255, 223, 0, 0) 100%)';
+  }
+});
+
+
+const sparkleContainer = document.querySelector('.sparkling-background');
+
+// Generate Sparkles
+for (let i = 0; i < 50; i++) {
+  const sparkle = document.createElement('div');
+  sparkle.classList.add('sparkle');
+
+  // Randomly position sparkles
+  sparkle.style.top = `${Math.random() * 100}%`;
+  sparkle.style.left = `${Math.random() * 100}%`;
+
+  // Randomize animation duration and delay
+  sparkle.style.animationDuration = `${2 + Math.random() * 3}s`;
+  sparkle.style.animationDelay = `${Math.random() * 2}s`;
+
+  sparkleContainer.appendChild(sparkle);
+}
 
 
 // testimonials variables
