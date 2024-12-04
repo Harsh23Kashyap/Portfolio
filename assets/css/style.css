@@ -417,6 +417,12 @@ body {
    border-radius: inherit;
    z-index: -1;
 }
+@media (max-width: 768px) {
+   .icon-box-mail {
+       background-color: var(--bg-color); /* Match the background */
+       pointer-events: none; /* Prevent interaction with the element */
+   }
+}
 .icon-box ion-icon {
    --ionicon-stroke-width: 35px;
 }
@@ -1604,9 +1610,22 @@ textarea.form-input::-webkit-resizer {
        min-width: calc(33.33% - 35px);
   }
   /** * #RESUME */
-   .custom-link {
-      color: var(--vegas-gold);
-  }
+  .custom-link {
+   color: var(--vegas-gold); /* Ensures the color is consistent */
+   text-decoration: none; /* Removes underline if default styles add it */
+   transition: color 0.3s ease; /* Optional: Smooth transition for hover effects */
+}
+
+/* Explicitly handle link states */
+.custom-link:visited {
+   color: var(--vegas-gold); /* Ensures visited links remain vegas gold */
+}
+
+.custom-link:hover,
+.custom-link:focus {
+   text-decoration: underline; /* Optional: Add hover/focus effect */
+}
+
    .timeline-list {
        margin-left: 65px;
   }
