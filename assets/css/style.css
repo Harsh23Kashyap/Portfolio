@@ -1610,21 +1610,29 @@ textarea.form-input::-webkit-resizer {
        min-width: calc(33.33% - 35px);
   }
   /** * #RESUME */
-  .custom-link {
-   color: var(--vegas-gold); /* Ensures the color is consistent */
-   text-decoration: none; /* Removes underline if default styles add it */
-   transition: color 0.3s ease; /* Optional: Smooth transition for hover effects */
+/* Use the highest specificity with universal enforcement */
+a.custom-link,
+a.custom-link:link,
+a.custom-link:visited,
+a.custom-link:hover,
+a.custom-link:focus,
+a.custom-link:active {
+   color: var(--vegas-gold) !important; /* Force vegas-gold */
+   text-decoration: none !important; /* Ensure no underline */
 }
 
-/* Explicitly handle link states */
-.custom-link:visited {
-   color: var(--vegas-gold); /* Ensures visited links remain vegas gold */
+/* Override default browser styles for all anchor tags globally, if needed */
+a {
+   color: var(--vegas-gold) !important; /* Optional: Universal anchor tag override */
 }
 
-.custom-link:hover,
-.custom-link:focus {
-   text-decoration: underline; /* Optional: Add hover/focus effect */
+/* Mobile-specific styles, if required */
+@media (max-width: 768px) {
+   a.custom-link {
+      color: var(--vegas-gold) !important; /* Reapply vegas-gold */
+   }
 }
+
 
    .timeline-list {
        margin-left: 65px;
