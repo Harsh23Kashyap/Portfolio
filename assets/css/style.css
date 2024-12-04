@@ -514,7 +514,16 @@ main {
    overflow: hidden;
    transition: var(--transition-2);
 }
-
+/* Professor Link Styling */
+.professor-link {
+   color: var(--link-color);
+   text-decoration: none;
+   transition: color 0.3s ease; /* Smooth transition for color change */
+ }
+ 
+ .professor-link:hover {
+   text-decoration: underline; /* Optional: Add hover effect */
+ }
 .sidebar.active {
    max-height: 405px;
 }
