@@ -193,3 +193,43 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// Function to set the mode based on local time
+function setModeBasedOnTime() {
+  const hour = new Date().getHours(); // Get current hour
+  const isLightMode = hour >= 8 && hour < 18; // 6 AM to 6 PM for light mode
+
+  if (isLightMode) {
+    rootElement.classList.add("light-mode");
+    rootElement.classList.remove("dark-mode");
+    themeToggleInput.checked = true;
+    switchIcon.style.backgroundImage =
+      'radial-gradient(circle, rgba(255, 223, 0, 1) 60%, rgba(255, 223, 0, 0) 100%)';
+  } else {
+    rootElement.classList.add("dark-mode");
+    rootElement.classList.remove("light-mode");
+    themeToggleInput.checked = false;
+    switchIcon.style.backgroundImage = 'none';
+  }
+}
+
+// Initialize mode based on local time
+document.addEventListener("DOMContentLoaded", () => {
+  setModeBasedOnTime();
+  themeToggleInput.addEventListener("change", () => {
+    if (themeToggleInput.checked) {
+      rootElement.classList.add("light-mode");
+      rootElement.classList.remove("dark-mode");
+      switchIcon.style.backgroundImage =
+        'radial-gradient(circle, rgba(255, 223, 0, 1) 60%, rgba(255, 223, 0, 0) 100%)';
+    } else {
+      rootElement.classList.remove("light-mode");
+      rootElement.classList.add("dark-mode");
+      switchIcon.style.backgroundImage = 'none';
+    }
+  });
+});
+
+// Optional: Reapply mode at the top of each hour
+setInterval(setModeBasedOnTime, 60 * 60 * 1000);
