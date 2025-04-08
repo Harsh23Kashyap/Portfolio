@@ -8,6 +8,12 @@
       <!--
          - favicon
          -->
+         <!-- Include SweetAlert2 CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+      <!-- Include SweetAlert2 JS -->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
       <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.1/dist/css/ionicons.min.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.1/dist/css/ionicons.min.css">
@@ -862,6 +868,30 @@
                            <h3 class="project-title">Food Delivery Website</h3>
                            <p class="project-category">Web Development</p>
                         </a>
+                     </li>
+                     <li class="project-item active" data-filter-item data-category="web development" onclick="Swal.fire({
+                        title: 'Private Repository',
+                        text: 'This project is not publicly available as it contains sensitive automation techniques that could potentially be misused',
+                        icon: 'info',
+                        iconColor: '#d4af37',
+                        confirmButtonText: 'Understood',
+                        confirmButtonColor: '#d4af37',
+                        customClass: {
+                           popup: 'custom-popup-class',
+                           confirmButton: 'custom-confirm-button',
+                           title: 'dark-text',
+                           htmlContainer: 'dark-text'
+                        },
+                        background: '#000'
+                     })" style="cursor: pointer;">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/ticketscript.png" alt="ticket" loading="lazy">
+                           </figure>
+                           <h3 class="project-title">Ticket Notifier Script</h3>
+                           <p class="project-category">Selenium/ Automation</p>
                      </li>
                      <li class="project-item  active" data-filter-item data-category="app development">
                       <a href="https://github.com/Harsh23Kashyap/EverythingFinance">
