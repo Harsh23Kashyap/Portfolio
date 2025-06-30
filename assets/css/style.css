@@ -2026,15 +2026,35 @@ a.custom-link:active {
    left: 95%;
    animation-delay: 4s;
  }
- .sparkling-background .sparkle:nth-child(10) {
-   top: 50%;
-   left: 80%;
-   animation-delay: 4.5s;
- }
- @media (max-width: 768px) {
-   .sparkling-background {
-     display: none;
-   }
- }
+  .sparkling-background .sparkle:nth-child(10) {
+    top: 50%;
+    left: 80%;
+    animation-delay: 4.5s;
+  }
+  @media (max-width: 768px) {
+    .sparkling-background {
+      display: none;
+    }
+  }
+
+  /* Scroll to Top Button */
+  .scroll-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--orange-yellow-crayola);
+    color: var(--eerie-black-1);
+    border: none;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+
+  .scroll-top:hover {
+    background-color: var(--orange-yellow-crayola-60);
+  }
   
 }
