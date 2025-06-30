@@ -23,7 +23,12 @@
    --vegas-gold: hsl(45, 54%, 58%);
    --light-gray: hsl(0, 0%, 84%);
    --light-gray-70: hsla(0, 0%, 84%, 0.7);
-   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  /* Airbnb palette */
+  --airbnb-red: #FF5A5F;
+  --airbnb-dark: #484848;
+  --airbnb-light: #FFFFFF;
+  --airbnb-gray: #767676;
    --list-item-color: hsl(0, 0%, 100%); /* Default white for dark mode */
   --icon-box-color: hsl(45, 100%, 72%); /* Bright yellow */
   --icon-box-bg: var(--border-gradient-onyx); /* Dark gradient background */
@@ -48,7 +53,7 @@
     --mapbox-iframe-filter:  grayscale(1) invert(1); /* No filter in dark mode */
 
    /** Typography */
-   --ff-poppins: 'Poppins', sans-serif;
+   --ff-poppins: 'Montserrat', sans-serif;
    --fs-1: 24px;
    --fs-2: 18px;
    --fs-3: 17px;
@@ -344,12 +349,13 @@ html {
    font-family: var(--ff-poppins);
 }
 body {
-   background: var(--smoky-black);
+   background: var(--airbnb-light);
+   color: var(--airbnb-dark);
 }
 /*-----------------------------------*\ #REUSED STYLE \*-----------------------------------*/
 .sidebar, article {
-   background: var(--eerie-black-2);
-   border: 1px solid var(--jet);
+   background: var(--airbnb-light);
+   border: 1px solid var(--airbnb-gray);
    border-radius: 20px;
    padding: 15px;
    box-shadow: var(--shadow-1);
@@ -841,7 +847,7 @@ main {
    pointer-events: all;
 }
 .testimonials-modal {
-   background: var(--eerie-black-2);
+   background: var(--airbnb-light);
    position: relative;
    padding: 15px;
    margin: 15px 12px;
@@ -1033,7 +1039,7 @@ main {
    margin-bottom: 25px;
 }
 .filter-select {
-   background: var(--eerie-black-2);
+   background: var(--airbnb-light);
    color: var(--light-gray);
    display: flex;
    justify-content: space-between;
@@ -1049,7 +1055,7 @@ main {
    transform: rotate(0.5turn);
 }
 .select-list {
-   background: var(--eerie-black-2);
+   background: var(--airbnb-light);
    position: absolute;
    top: calc(100% + 6px);
    width: 100%;
@@ -1068,7 +1074,7 @@ main {
    pointer-events: all;
 }
 .select-item button {
-   background: var(--eerie-black-2);
+   background: var(--airbnb-light);
    color: var(--light-gray);
    font-size: var(--fs-6);
    font-weight: var(--fw-300);
@@ -2055,6 +2061,57 @@ a.custom-link:active {
 
   .scroll-top:hover {
     background-color: var(--orange-yellow-crayola-60);
+  }
+
+  /* Airbnb-style header */
+  .top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--airbnb-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .top-header .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--airbnb-red);
+  }
+
+  .search-input {
+    max-width: 300px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--airbnb-gray);
+    border-radius: 999px;
+    outline: none;
+  }
+
+  .search-input:focus {
+    border-color: var(--airbnb-red);
+  }
+
+  .project-item {
+    position: relative;
+  }
+
+  .favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: 1px solid var(--airbnb-gray);
+    border-radius: 50%;
+    padding: 4px;
+    cursor: pointer;
+  }
+
+  .favorite-btn.active {
+    background: var(--airbnb-red);
+    color: #fff;
   }
   
 }

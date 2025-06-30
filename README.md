@@ -10,6 +10,7 @@ This is a portfolio web application built using HTML and CSS. It showcases your 
 - Contact form: Include a contact form to allow visitors to get in touch with you easily.
 - Light/Dark mode toggle and automatic theme switching based on time of day.
 - Scroll-to-top button for quick navigation.
+- Airbnb-inspired header with project search and favorite buttons.
  
 ## Installation
 

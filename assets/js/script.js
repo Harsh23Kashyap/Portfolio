@@ -236,6 +236,32 @@ setInterval(setModeBasedOnTime, 60 * 60 * 1000);
 
 // Scroll To Top Button
 const scrollTopBtn = document.getElementById("scrollTopBtn");
+const searchInput = document.getElementById("projectSearch");
+
+if (searchInput) {
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    document.querySelectorAll(".project-item").forEach((item) => {
+      const title = item.querySelector(".project-title").innerText.toLowerCase();
+      if (title.includes(query)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+}
+
+document.querySelectorAll(".project-item").forEach((item) => {
+  const favBtn = document.createElement("button");
+  favBtn.className = "favorite-btn";
+  favBtn.innerHTML = '<ion-icon name="heart-outline"></ion-icon>';
+  item.appendChild(favBtn);
+  favBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    favBtn.classList.toggle("active");
+  });
+});
 
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 300) {
