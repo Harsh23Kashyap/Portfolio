@@ -15,13 +15,19 @@ This is a portfolio web application built using HTML and CSS. It showcases your 
 2. Navigate to the project directory: `cd portfolio-web-app`
 3. Open `index.html` in your preferred web browser.
 
+For local development, serve the site over HTTP so `content.json` loads correctly:
+
+```bash
+python3 -m http.server 8765
+```
+
+Then open `http://localhost:8765`.
+
 ## Usage
 
 1. Customize the content:
-   - Open `index.html` in a text editor.
-   - Update the existing sections or add new sections as needed.
-   - Replace the project placeholders with your own projects, including project descriptions, screenshots, and links.
-   - Update the About Me section with your own information.
+   - Edit `assets/data/content.json` to update experience, projects, skills, contacts, and achievements.
+   - Open `index.html` in a text editor for layout and sections not yet in JSON (testimonials, certifications, extra curricular).
 2. Customize the styling:
    - Open `styles.css` in a text editor.
    - Modify the CSS styles to match your preferred design and color scheme.

@@ -2036,5 +2036,66 @@ a.custom-link:active {
      display: none;
    }
  }
-  
+
+.project-section-divider { margin: 28px 0 16px; }
+
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.metric-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.metric-value {
+  display: block;
+  font-size: var(--fs-1);
+  font-weight: var(--fw-600);
+  color: var(--orange-yellow-crayola);
+  margin-bottom: 6px;
+}
+
+.metric-label {
+  display: block;
+  font-size: var(--fs-7);
+  color: var(--light-gray-70);
+  line-height: 1.4;
+}
+
+.achievements-strip {
+  margin-bottom: 28px;
+}
+
+.achievements-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.achievements-list li {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: var(--fs-7);
+  color: var(--light-gray);
+}
+
+.timeline-text .white-dot li {
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .hero-metrics {
+    grid-template-columns: 1fr;
+  }
 }
