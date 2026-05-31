@@ -203,11 +203,38 @@ function initProjectFilters() {
   }
 }
 
+function initMetricFlipCards() {
+  const cards = document.querySelectorAll(".flip-card");
+  if (!cards.length || document.body.dataset.metricFlipInit) return;
+  document.body.dataset.metricFlipInit = "true";
+
+  const isTouch = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+
+  cards.forEach((card) => {
+    if (isTouch) {
+      card.addEventListener("click", () => {
+        const willFlip = !card.classList.contains("is-flipped");
+        cards.forEach((other) => other.classList.remove("is-flipped"));
+        if (willFlip) card.classList.add("is-flipped");
+      });
+    }
+
+    card.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      const willFlip = !card.classList.contains("is-flipped");
+      cards.forEach((other) => other.classList.remove("is-flipped"));
+      if (willFlip) card.classList.add("is-flipped");
+    });
+  });
+}
+
 function initCoreInteractions() {
   if (interactionsInitialized) return;
   interactionsInitialized = true;
 
   initSparkles();
+  initMetricFlipCards();
   initTestimonialsModal();
 
   const form = document.querySelector("[data-form]");
