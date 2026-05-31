@@ -2010,6 +2010,8 @@ a.custom-link:active {
   transition: background-color var(--transition-1), box-shadow var(--transition-1);
 }
 
+}
+
 /* Full Page Sparkling Background */
 .sparkling-background {
    position: fixed;
