@@ -32,7 +32,43 @@
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
    </head>
    <body>
-      <div class="sparkling-background"></div>
+      <div class="sparkling-background" aria-hidden="true">
+         <svg class="bg-circuit-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+               <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#DAA520" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#FFD700" stop-opacity="0.08"/>
+               </linearGradient>
+               <filter id="circuitGlow">
+                  <feGaussianBlur stdDeviation="2" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+               </filter>
+            </defs>
+            <g opacity="0.12" stroke="url(#circuitGrad)" stroke-width="1" fill="none">
+               <path d="M0 450 H360 M360 450 V180 M360 180 H720 M720 180 V620 M720 620 H1080 M1080 620 V320 M1080 320 H1440"/>
+               <path d="M180 0 V900 M540 0 V900 M900 0 V900 M1260 0 V900"/>
+               <circle cx="360" cy="450" r="6" fill="#DAA520" opacity="0.4"/>
+               <circle cx="720" cy="180" r="6" fill="#DAA520" opacity="0.4"/>
+               <circle cx="720" cy="620" r="6" fill="#DAA520" opacity="0.4"/>
+               <circle cx="1080" cy="320" r="6" fill="#DAA520" opacity="0.4"/>
+            </g>
+            <g filter="url(#circuitGlow)" opacity="0.55">
+               <circle class="pulse-node" cx="360" cy="450" r="3" fill="#FFD700">
+                  <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+               </circle>
+               <circle class="pulse-node" cx="720" cy="180" r="3" fill="#FFD700">
+                  <animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.5s" repeatCount="indefinite"/>
+               </circle>
+               <circle class="pulse-node" cx="1080" cy="620" r="3" fill="#FFD700">
+                  <animate attributeName="opacity" values="0.4;1;0.4" dur="3.5s" repeatCount="indefinite"/>
+               </circle>
+            </g>
+            <path class="signal-path" d="M360 450 L720 180 L1080 320" stroke="#DAA520" stroke-width="1.5" fill="none" opacity="0.2" stroke-dasharray="8 12">
+               <animate attributeName="stroke-dashoffset" values="0;-40" dur="4s" repeatCount="indefinite"/>
+            </path>
+         </svg>
+         <div class="sparkle-container"></div>
+      </div>
 
       <!--
          - #MAIN
@@ -201,9 +237,76 @@
                - #ABOUT
                -->
             <article class="about  active" data-page="about">
-               <header>
-                  <h2 class="h2 article-title">About me</h2>
+               <header class="about-header">
+                  <div class="about-header-text">
+                     <h2 class="h2 article-title">About me</h2>
+                  </div>
+                  <div class="about-hero-visual" aria-hidden="true">
+                     <svg viewBox="0 0 280 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                           <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+                              <stop offset="0%" stop-color="#FFD700" stop-opacity="0.9"/>
+                              <stop offset="100%" stop-color="#DAA520" stop-opacity="0.5"/>
+                           </linearGradient>
+                        </defs>
+                        <rect x="20" y="30" width="240" height="140" rx="12" fill="none" stroke="#DAA520" stroke-width="1.5" opacity="0.25"/>
+                        <rect x="32" y="44" width="80" height="8" rx="4" fill="#DAA520" opacity="0.35"/>
+                        <rect x="32" y="60" width="120" height="6" rx="3" fill="#DAA520" opacity="0.2"/>
+                        <rect x="32" y="74" width="100" height="6" rx="3" fill="#DAA520" opacity="0.15"/>
+                        <circle cx="210" cy="70" r="28" fill="none" stroke="url(#heroGrad)" stroke-width="2" opacity="0.7">
+                           <animate attributeName="r" values="26;30;26" dur="3s" repeatCount="indefinite"/>
+                        </circle>
+                        <path d="M195 70 L205 78 L225 58" stroke="#FFD700" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <g opacity="0.6">
+                           <rect x="32" y="100" width="216" height="52" rx="8" fill="none" stroke="#DAA520" stroke-width="1" opacity="0.3"/>
+                           <path d="M48 126 H80 M48 134 H110" stroke="#DAA520" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+                           <circle cx="200" cy="126" r="14" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+                           <path d="M192 126 L198 132 L210 118" stroke="#FFD700" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                        </g>
+                        <g class="float-chip">
+                           <rect x="170" y="148" width="72" height="24" rx="12" fill="#DAA520" opacity="0.15" stroke="#FFD700" stroke-width="1"/>
+                           <text x="206" y="164" text-anchor="middle" font-size="10" fill="#FFD700" font-family="monospace">5G · AI</text>
+                        </g>
+                     </svg>
+                  </div>
                </header>
+               <section class="hero-metrics hero-metrics--seven">
+                  <div class="metric-card">
+                     <span class="metric-value">3+</span>
+                     <span class="metric-label">Years Experience</span>
+                     <span class="metric-sublabel">Since graduating in 2023</span>
+                  </div>
+                  <div class="metric-card">
+                     <span class="metric-value">3</span>
+                     <span class="metric-label">Global MNCs</span>
+                     <span class="metric-sublabel">Apple · PayPal · Cisco</span>
+                  </div>
+                  <div class="metric-card">
+                     <span class="metric-value">3</span>
+                     <span class="metric-label">Indian Startups</span>
+                     <span class="metric-sublabel">Tata 1mg · Licious · YASH</span>
+                  </div>
+                  <div class="metric-card">
+                     <span class="metric-value">2</span>
+                     <span class="metric-label">Research Works</span>
+                     <span class="metric-sublabel">NYU · Washington State</span>
+                  </div>
+                  <div class="metric-card">
+                     <span class="metric-value">9.71</span>
+                     <span class="metric-label">CGPA</span>
+                     <span class="metric-sublabel">Top 0.5% · Thapar Institute</span>
+                  </div>
+                  <div class="metric-card">
+                     <span class="metric-value">1600+</span>
+                     <span class="metric-label">LeetCode Questions</span>
+                     <span class="metric-sublabel">Harsh23Kashyap</span>
+                  </div>
+                  <div class="metric-card">
+                     <span class="metric-value">7K+</span>
+                     <span class="metric-label">GitHub Contributions</span>
+                     <span class="metric-sublabel">Harsh23Kashyap</span>
+                  </div>
+               </section>
                <section class="about-text">
                   <p>
                      I am a Software Engineer 2 at Apple with a strong background in Computer Science. I graduated from Thapar Institute of Engineering and Technology with a CGPA of 9.71, ranking in the top 0.5% and earning the TIET Merit Scholarship all four years. My work spans macOS tooling, 5G protocol testing, LLM-powered triage automation, and multi-agent systems for telecom software development.
@@ -234,8 +337,7 @@
                      </li>
                      <li class="service-item">
                         <div class="service-icon-box">
-                           <img src="./assets/images/icon-datascience.svg
-                              " alt="design icon" width="40">
+                           <img src="./assets/images/icon-datascience.svg" alt="design icon" width="40">
                         </div>
                         <div class="service-content-box">
                            <h4 class="h4 service-item-title">Data Science</h4>
@@ -733,50 +835,62 @@
                            <div class="skill-progress-fill" style="width: 90%;"></div>
                         </div>
                      </li>
-                     <h4 class="h4 timeline-item-title">Languages & Backend</h4>
-                     <ul class="white-dot inline-list">
-                        <li>-  Java</li>
-                        <li>-  Spring Boot</li>
-                        <li>-  Python</li>
-                        <li>-  C/C++</li>
-                        <li>-  REST APIs</li>
-                        <li>-  SQL</li>
-                    </ul>
-                    <h4 class="h4 timeline-item-title">Web & UI</h4>
-                    <ul class="white-dot inline-list">
-                        <li>-  React.js</li>
-                        <li>-  Tailwind CSS</li>
-                        <li>-  JavaScript</li>
-                        <li>-  HTML/CSS</li>
-                        <li>-  Swift</li>
-                        <li>-  SwiftUI</li>
-                        <li>-  Flutter</li>
-                     </ul>
-                     <h4 class="h4 timeline-item-title">Cloud & Infra</h4>
-                     <ul class="white-dot inline-list">
-                        <li>-  AWS (EC2, S3, SES, DynamoDB)</li>
-                        <li>-  Docker</li>
-                        <li>-  Jenkins</li>
-                        <li>-  CI/CD</li>
-                        <li>-  Cloudflare</li>
-                     </ul>
-                     <h4 class="h4 timeline-item-title">Data & AI</h4>
-                     <ul class="white-dot inline-list">
-                        <li>-  RAG</li>
-                        <li>-  LLM agents</li>
-                        <li>-  FAISS</li>
-                        <li>-  XGBoost</li>
-                        <li>-  TensorFlow/Keras</li>
-                        <li>-  Incident-resolution automation</li>
-                     </ul>
-                     <h4 class="h4 timeline-item-title">Tools & Observability</h4>
-                     <ul class="white-dot inline-list">
-                        <li>-  Git/GitHub</li>
-                        <li>-  Postman</li>
-                        <li>-  Splunk</li>
-                        <li>-  Shell scripting</li>
-                     </ul>
                   </ul>
+                  <div class="skill-categories content-card">
+                     <div class="skill-category">
+                        <h4 class="h4 timeline-item-title">Languages & Backend</h4>
+                        <ul class="skill-tags">
+                           <li>Java</li>
+                           <li>Spring Boot</li>
+                           <li>Python</li>
+                           <li>C/C++</li>
+                           <li>REST APIs</li>
+                           <li>SQL</li>
+                        </ul>
+                     </div>
+                     <div class="skill-category">
+                        <h4 class="h4 timeline-item-title">Web & UI</h4>
+                        <ul class="skill-tags">
+                           <li>React.js</li>
+                           <li>Tailwind CSS</li>
+                           <li>JavaScript</li>
+                           <li>HTML/CSS</li>
+                           <li>Swift</li>
+                           <li>SwiftUI</li>
+                           <li>Flutter</li>
+                        </ul>
+                     </div>
+                     <div class="skill-category">
+                        <h4 class="h4 timeline-item-title">Cloud & Infra</h4>
+                        <ul class="skill-tags">
+                           <li>AWS (EC2, S3, SES, DynamoDB)</li>
+                           <li>Docker</li>
+                           <li>Jenkins</li>
+                           <li>CI/CD</li>
+                           <li>Cloudflare</li>
+                        </ul>
+                     </div>
+                     <div class="skill-category">
+                        <h4 class="h4 timeline-item-title">Data & AI</h4>
+                        <ul class="skill-tags">
+                           <li>RAG</li>
+                           <li>LLM agents</li>
+                           <li>FAISS</li>
+                           <li>XGBoost</li>
+                           <li>TensorFlow/Keras</li>
+                           <li>Incident-resolution automation</li>
+                        </ul>
+                     </div>
+                     <div class="skill-category">
+                        <h4 class="h4 timeline-item-title">Tools & Observability</h4>
+                        <ul class="skill-tags">
+                           <li>Git/GitHub</li>
+                           <li>Postman</li>
+                           <li>Splunk</li>
+                           <li>Shell scripting</li>
+                        </ul>
+                     </div>
+                  </div>
                </section>
                <br>
                <section class="skill">
