@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Placement visualiser icon</title>
+  <desc id="desc">Minimal dashboard icon showing placement outcomes and trend analytics.</desc>
+  <defs>
+    <linearGradient id="gold" x1="24" x2="136" y1="24" y2="136" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE08A"/>
+      <stop offset="1" stop-color="#C79627"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="38" x2="122" y1="124" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#75D7FF"/>
+      <stop offset="1" stop-color="#8EF6C5"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="140" height="140" rx="34" fill="#0B0B0D"/>
+  <rect x="25" y="25" width="110" height="110" rx="26" fill="#151515" stroke="#3A3321"/>
+  <rect x="42" y="50" width="76" height="54" rx="12" fill="#0F1113" stroke="#3A3321" stroke-width="3"/>
+  <path d="M55 91V76M76 91V65M97 91V56" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M48 112h64" stroke="#3A3321" stroke-width="5" stroke-linecap="round"/>
+  <path d="M48 112c14-8 25-13 38-20 11-6 20-14 32-28" fill="none" stroke="url(#blue)" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="48" cy="112" r="6" fill="#0B0B0D" stroke="#75D7FF" stroke-width="4"/>
+  <circle cx="86" cy="92" r="6" fill="#0B0B0D" stroke="#75D7FF" stroke-width="4"/>
+  <circle cx="118" cy="64" r="6" fill="#0B0B0D" stroke="#75D7FF" stroke-width="4"/>
+  <path d="M116 42h12v12" fill="none" stroke="#FFE08A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

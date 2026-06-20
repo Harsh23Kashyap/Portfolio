@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Stock market predictor icon</title>
+  <desc id="desc">Minimal gold icon showing market candles and a forecast trend line.</desc>
+  <defs>
+    <linearGradient id="gold" x1="24" x2="136" y1="24" y2="136" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE08A"/>
+      <stop offset="1" stop-color="#C79627"/>
+    </linearGradient>
+    <linearGradient id="green" x1="40" x2="124" y1="120" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8EF6C5"/>
+      <stop offset="1" stop-color="#56D68A"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="140" height="140" rx="34" fill="#0B0B0D"/>
+  <rect x="25" y="25" width="110" height="110" rx="26" fill="#151515" stroke="#3A3321"/>
+  <path d="M42 112h76" stroke="#3A3321" stroke-width="5" stroke-linecap="round"/>
+  <path d="M48 94V62" stroke="#FFE08A" stroke-width="4" stroke-linecap="round"/>
+  <rect x="42" y="72" width="12" height="24" rx="4" fill="url(#gold)"/>
+  <path d="M76 104V68" stroke="#75D7FF" stroke-width="4" stroke-linecap="round"/>
+  <rect x="70" y="82" width="12" height="18" rx="4" fill="#75D7FF"/>
+  <path d="M104 90V50" stroke="#8EF6C5" stroke-width="4" stroke-linecap="round"/>
+  <rect x="98" y="58" width="12" height="28" rx="4" fill="url(#green)"/>
+  <path d="M42 106C58 96 68 92 80 82s22-25 40-32" fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M111 51h14v14" fill="none" stroke="#FFE08A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="80" cy="82" r="6" fill="#0B0B0D" stroke="#FFE08A" stroke-width="4"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Question answering system icon</title>
+  <desc id="desc">Minimal icon showing question and answer bubbles connected through NLP nodes.</desc>
+  <defs>
+    <linearGradient id="gold" x1="24" x2="136" y1="24" y2="136" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE08A"/>
+      <stop offset="1" stop-color="#C79627"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="40" x2="126" y1="118" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#75D7FF"/>
+      <stop offset="1" stop-color="#9E8CFF"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="140" height="140" rx="34" fill="#0B0B0D"/>
+  <rect x="25" y="25" width="110" height="110" rx="26" fill="#151515" stroke="#3A3321"/>
+  <path d="M49 52h42c9 0 16 7 16 16v7c0 9-7 16-16 16H70l-19 16v-16h-2c-9 0-16-7-16-16v-7c0-9 7-16 16-16z" fill="#0F1113" stroke="url(#gold)" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M72 105h35c8 0 14 6 14 14v2c0 8-6 14-14 14H88l-15 11v-11h-1c-8 0-14-6-14-14v-2c0-8 6-14 14-14z" fill="#0B0B0D" stroke="url(#blue)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M64 70c0-7 6-12 15-12 8 0 14 5 14 12 0 6-4 9-9 12-4 2-5 4-5 8" fill="none" stroke="#FFE08A" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="79" cy="99" r="4" fill="#FFE08A"/>
+  <path d="M77 121l7 7 16-18" fill="none" stroke="#75D7FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M116 48c7 6 11 15 11 25M44 122c-6-6-10-14-11-24" fill="none" stroke="#3A3321" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="116" cy="48" r="5" fill="#75D7FF"/>
+  <circle cx="44" cy="122" r="5" fill="#FFE08A"/>
+</svg>
