@@ -66,3 +66,14 @@
 **Approach chosen:** Scoped Resume CSS polish + Resume-only bullet cleanup
 **Outcome:** Implemented
 **Files affected:** index.html, assets/css/style.css
+
+## My Interests Capability Map — 2026-06-20
+
+**Decisions:**
+- Replace generic service-card feel with slim capability-map lanes
+- Use custom inline SVG icons instead of mismatched legacy image icons
+- Keep content intact while making the section lighter than Projects and simpler than Resume
+
+**Approach chosen:** Capability map with scoped CSS and responsive icon treatment
+**Outcome:** Implemented
+**Files affected:** index.html, assets/css/style.css

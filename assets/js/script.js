@@ -230,12 +230,54 @@ function initMetricFlipCards() {
   });
 }
 
+function initTestimonialsAutoLoop() {
+  const list = document.querySelector(".testimonials-list");
+  if (!list || list.dataset.autoLoopInit) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  const originalItems = Array.from(list.querySelectorAll(".testimonials-item"));
+  if (originalItems.length < 2) return;
+
+  list.dataset.autoLoopInit = "true";
+  originalItems.forEach((item) => {
+    const clone = item.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    clone.dataset.testimonialClone = "true";
+    list.appendChild(clone);
+  });
+
+  list.classList.add("is-auto-loop");
+
+  let paused = false;
+  let frameId = null;
+  const speed = 1.7;
+
+  const tick = () => {
+    if (!paused && !document.hidden) {
+      const resetPoint = list.scrollWidth / 2;
+      list.scrollLeft += speed;
+      if (list.scrollLeft >= resetPoint) list.scrollLeft = 0;
+    }
+
+    frameId = window.requestAnimationFrame(tick);
+  };
+
+  list.addEventListener("mouseenter", () => { paused = true; });
+  list.addEventListener("mouseleave", () => { paused = false; });
+  list.addEventListener("focusin", () => { paused = true; });
+  list.addEventListener("focusout", () => { paused = false; });
+
+  frameId = window.requestAnimationFrame(tick);
+  window.addEventListener("beforeunload", () => window.cancelAnimationFrame(frameId), { once: true });
+}
+
 function initCoreInteractions() {
   if (interactionsInitialized) return;
   interactionsInitialized = true;
 
   initSparkles();
   initMetricFlipCards();
+  initTestimonialsAutoLoop();
   initTestimonialsModal();
 
   const form = document.querySelector("[data-form]");
