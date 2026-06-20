@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Agentic job matching icon</title>
+  <desc id="desc">Minimal icon showing candidate and employer agents connected through explainable matching.</desc>
+  <defs>
+    <linearGradient id="gold" x1="24" x2="136" y1="24" y2="136" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE08A"/>
+      <stop offset="1" stop-color="#C79627"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="34" x2="126" y1="120" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8EF6C5"/>
+      <stop offset="1" stop-color="#75D7FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="140" height="140" rx="34" fill="#0B0B0D"/>
+  <circle cx="80" cy="80" r="52" fill="#151515" stroke="#3A3321" stroke-width="2"/>
+  <path d="M54 62c10-14 42-14 52 0" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M54 98c10 14 42 14 52 0" fill="none" stroke="url(#mint)" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#0B0B0D" stroke-width="5">
+    <circle cx="45" cy="80" r="18" stroke="url(#gold)"/>
+    <circle cx="115" cy="80" r="18" stroke="url(#mint)"/>
+  </g>
+  <g fill="#FFE08A">
+    <circle cx="45" cy="74" r="5"/>
+    <path d="M34 91c3-10 19-10 22 0z"/>
+  </g>
+  <g fill="#75D7FF">
+    <rect x="107" y="70" width="16" height="20" rx="4"/>
+    <path d="M103 75h24" stroke="#75D7FF" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <rect x="61" y="60" width="38" height="40" rx="12" fill="#0F1113" stroke="url(#gold)" stroke-width="4"/>
+  <path d="M70 78l8 8 15-18" fill="none" stroke="#FFE08A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M64 112h32" stroke="#3A3321" stroke-width="5" stroke-linecap="round"/>
+</svg>

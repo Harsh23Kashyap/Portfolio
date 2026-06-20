@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Odyssey planner icon</title>
+  <desc id="desc">Minimal gold icon showing Pareto-style query planning and cost modeling.</desc>
+  <defs>
+    <linearGradient id="gold" x1="24" x2="136" y1="24" y2="136" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE08A"/>
+      <stop offset="1" stop-color="#C79627"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="36" x2="126" y1="120" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#75D7FF"/>
+      <stop offset="1" stop-color="#3F8CFF"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="140" height="140" rx="34" fill="#0B0B0D"/>
+  <rect x="24" y="24" width="112" height="112" rx="26" fill="#151515" stroke="#3A3321"/>
+  <path d="M42 112h76" stroke="#3A3321" stroke-width="5" stroke-linecap="round"/>
+  <path d="M42 112C56 106 66 94 78 80s25-27 40-32" fill="none" stroke="url(#gold)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M42 112c18-4 34-9 50-15 12-5 22-10 34-18" fill="none" stroke="url(#blue)" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 12"/>
+  <circle cx="42" cy="112" r="8" fill="#0B0B0D" stroke="url(#gold)" stroke-width="5"/>
+  <circle cx="78" cy="80" r="8" fill="#0B0B0D" stroke="url(#gold)" stroke-width="5"/>
+  <circle cx="118" cy="48" r="8" fill="#0B0B0D" stroke="url(#gold)" stroke-width="5"/>
+  <path d="M100 108l18 18 24-34" fill="none" stroke="#FFE08A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

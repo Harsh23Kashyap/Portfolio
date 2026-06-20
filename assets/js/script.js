@@ -59,6 +59,7 @@ const REVEAL_SELECTORS = [
   ".service-item",
   ".timeline-item",
   ".project-item",
+  ".featured-project-card",
   ".testimonials-item",
   ".blog-post-item",
   ".clients",
