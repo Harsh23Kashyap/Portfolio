@@ -1709,11 +1709,23 @@
             <!--
                - #BLOG
                -->
-            <article class="blog" data-page="certifications">
-               <header>
-                  <h2 class="h2 article-title">Work</h2>
+            <article class="blog certifications" data-page="certifications">
+               <header class="certifications-hero">
+                  <div>
+                     <p class="section-kicker">Proof & credentials</p>
+                     <h2 class="h2 article-title">Certifications</h2>
+                     <p class="certifications-hero-text">A compact archive of work letters, internship certificates, and technical course credentials.</p>
+                  </div>
+                  <div class="certification-stats" aria-label="Certification summary">
+                     <span>6 work letters</span>
+                     <span>technical coursework</span>
+                  </div>
                </header>
-               <section class="blog-posts">
+               <section class="blog-posts certification-section certification-section--work">
+                  <div class="certification-section-heading">
+                     <p class="section-kicker">Work</p>
+                     <h3 class="h3">Experience Letters</h3>
+                  </div>
                   <ul class="blog-posts-list">
                      <li class="blog-post-item">
                         <a href="https://drive.google.com/file/d/1bcMADgQagjmkKnkg-kb32_qlM3fw_M1P/view?usp=sharing">
@@ -1757,7 +1769,6 @@
                            </div>
                         </a>
                      </li>
-                  </ul>
                   <li class="blog-post-item">
                      <a href="https://drive.google.com/file/d/1kp1TXcnB5PdFyjuQVpBQBfx_JNaZIyQw/view?usp=sharing">
                         <figure class="blog-banner-box">
@@ -1802,10 +1813,11 @@
                   </li>
                   </ul>
                </section>
-               <header>
-                  <h2 class="h2 article-title">Course Certifications</h2>
-               </header>
-               <section class="blog-posts">
+               <section class="blog-posts certification-section certification-section--courses">
+                  <div class="certification-section-heading">
+                     <p class="section-kicker">Learning</p>
+                     <h3 class="h3">Course Certifications</h3>
+                  </div>
                   <ul class="blog-posts-list">
                      <li class="blog-post-item">
                         <a href="https://drive.google.com/file/d/1SwcnEpkOE-99gW-Ft2JiQnoMyc5B6Rsn/view?usp=sharing">
@@ -2052,12 +2064,29 @@
             <!--
                - #Extra Cirrciulars
                -->
-            <article class="resume" data-page="extra">
-               <header>
-                  <h2 class="h2 ">Extra</h2>
-                  <h2 class="h2 article-title">Curricular</h2>
+            <article class="resume extra-page" data-page="extra">
+               <header class="extra-hero">
+                  <div>
+                     <p class="section-kicker">Beyond engineering</p>
+                     <h2 class="h2 article-title">Extra Curricular</h2>
+                     <p class="extra-hero-text">Leadership, volunteering, sport, writing, travel, and the things that keep my work grounded.</p>
+                  </div>
+                  <svg class="extra-hero-art" viewBox="0 0 180 120" aria-hidden="true">
+                     <defs>
+                        <linearGradient id="extra-gold-wash" x1="28" y1="10" x2="152" y2="110" gradientUnits="userSpaceOnUse">
+                           <stop stop-color="#f6c761" stop-opacity="0.72"/>
+                           <stop offset="1" stop-color="#d6a642" stop-opacity="0.08"/>
+                        </linearGradient>
+                     </defs>
+                     <rect x="16" y="18" width="148" height="84" rx="28" fill="url(#extra-gold-wash)" opacity="0.42"/>
+                     <path d="M42 74c12-18 25-26 40-23 16 3 26 21 44 12 8-4 14-11 18-20" fill="none" stroke="#f6c761" stroke-width="3" stroke-linecap="round"/>
+                     <circle cx="44" cy="74" r="5" fill="#f6c761"/>
+                     <circle cx="82" cy="51" r="5" fill="#f6c761"/>
+                     <circle cx="126" cy="63" r="5" fill="#f6c761"/>
+                     <path d="M55 86h70M68 34h44M74 98h32" stroke="#fff1c2" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+                  </svg>
                </header>
-               <section class="timeline">
+               <section class="timeline extra-section extra-section--volunteering">
                   <div class="title-wrapper">
                      <div class="icon-box">
                         <ion-icon name="heart" class="volunteering-icon"></ion-icon>
@@ -2072,18 +2101,12 @@
                               <span style="margin-left: 5px; font-size: 1.2em;">&#8599;</span>
                            </a>
                         </h4>
-                        
-                        <h4 class="h4 timeline-item-title"></h4>
                         <span>Member Of The Board Of Advisors | Jan 2023 — July 2023</span>
-                        <p class="timeline-text">
                         <ul class="white-dot">
                            <li>-  Leveraged my expertise to empower and mentor the next generation of leaders within the Thapar Institute of Counselling Cell, driving impactful advocacy and awareness campaigns to promote mental health among incoming cohorts of Thapar Institute of Engineering and Technology.                  </li>
                            <li>-  Developed and executed strategic initiatives aimed at cultivating a community of mental health ambassadors, fostering their growth and ensuring long-term sustainability in championing mental well-being.                    </li>
                         </ul>
-                        </p>
-                        <br>
                         <span>Vice Lead Ambassador | Aug 2021 - Mar 2022 </span>
-                        <p class="timeline-text">
                         <ul class="white-dot">
                            <li>-  Spearheaded a powerful mental health awareness campaign, advocating for increased awareness and support on a large scale.                  </li>
                            <li>-  Offered compassionate assistance to individuals facing anxiety, depression, and various mental health obstacles, providing a helping hand during their challenging times.</li>
@@ -2091,26 +2114,18 @@
                            <li>-  Exercised exceptional leadership abilities while overseeing a dynamic team of approximately 100 professionals, fostering a collaborative and empowering environment. </li>
                            <li>-  Fostered close collaborations with students, Mental Health Support Advocates (MHSAs), and dedicated counselors, ensuring seamless coordination and comprehensive support for the community.            </li>
                         </ul>
-                        </p>
-                        <br>
                         <span>Social Media Head | Mar 2021 - Aug 2021 </span>
-                        <p class="timeline-text">
                         <ul class="white-dot">
                            <li>-  Demonstrated expertise in managing and growing the official Instagram account for TICC, achieving remarkable growth and engagement rates.              </li>
                            <li>-  Implemented strategic initiatives and executed impactful content strategies that resulted in a substantial increase in followers, surpassing the milestone of 1,000.                </li>
                            <li>-  Spearheaded the establishment of TICC's presence on YouTube and LinkedIn, strategically expanding the organization's digital footprint and elevating brand visibility in the online space.          </li>
                         </ul>
-                        </p>
-                        <br>
                         <span>Content Writer | Jul 2020 - Mar 2021 </span>
-                        <p class="timeline-text">
                         <ul class="white-dot">
                            <li>-  Developed compelling and impactful marketing campaigns, including emailers, captions, and content pieces, to effectively engage and captivate audiences.              </li>
                            <li>-  Demonstrated a strong ability to create engaging and persuasive content across various platforms, driving brand awareness and customer engagement.                  </li>
                            <li>-  Consistently delivered persuasive and compelling communication materials, such as mailers, captions, and content pieces, that effectively conveyed key messages and captured the attention of the intended recipients.          </li>
                         </ul>
-                        </p>
-                        <br>
                         <a href="https://www.instagram.com/ticc.official/">
                            <figure class="project-img">
                               <img src="./assets/images/TICC1.jpeg" alt="TICC" loading="lazy">
@@ -2124,45 +2139,41 @@
                               <span style="margin-left: 5px; font-size: 1.2em;">&#8599;</span>
                            </a> 
                         </h4>
-                        <h4 class="h4 timeline-item-title"></h4>
                         <span>Member  | Dec 2021 — Present</span>
-                        <p class="timeline-text">
                         <ul class="white-dot">
                            <li>-  Passionate advocate for the education of underprivileged young girls, committed to empowering them through access to higher education opportunities.</li>
                            <li>-  Engage in mentoring and guidance programs to inspire and motivate young girls, fostering their self-confidence and belief in their abilities.                    </li>
                            <li>-  Committed to making a lasting impact on society by breaking down barriers to education and empowering underprivileged young girls to become agents of change in their communities.
                            </li>
                         </ul>
-                        </p>
-                        <br>
                         <a href="https://www.linkedin.com/company/diidi/">
                            <figure class="project-img">
                               <img src="./assets/images/Diidi4.jpeg" alt="DiiDi" loading="lazy">
                            </figure>
                         </a>
-                        <li class="timeline-item">
-                           <h4 class="h4 timeline-item-title">
-                              <a href="https://www.idiausa.org" target="_blank" style="text-decoration: none; color: inherit; display: inline-flex; align-items: center;">
-                                 IDIA
-                                 <span style="margin-left: 5px; font-size: 1.2em;">&#8599;</span>
-                              </a>
-                           </h4>
-                           <h4 class="h4 timeline-item-title"></h4>
-                           <span>Member | Present</span>
-                           <p class="timeline-text">
-                           <ul class="white-dot">
-                              <li>-  Developing a comprehensive app for IDIA members and volunteers to seamlessly coordinate, plan, and participate in events. The app will provide real-time member updates, volunteer opportunities, and information on shop locations. <br>Additionally, it will feature media content and insights from IDIA events, along with empowering blogs curated by women for women.</li>
-                           </ul>
+                     </li>
+                     <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">
+                           <a href="https://www.idiausa.org" target="_blank" style="text-decoration: none; color: inherit; display: inline-flex; align-items: center;">
+                              IDIA
+                              <span style="margin-left: 5px; font-size: 1.2em;">&#8599;</span>
+                           </a>
+                        </h4>
+                        <span>Member | Present</span>
+                        <ul class="white-dot">
+                           <li>-  Developing a comprehensive app for IDIA members and volunteers to seamlessly coordinate, plan, and participate in events. The app will provide real-time member updates, volunteer opportunities, and information on shop locations. <br>Additionally, it will feature media content and insights from IDIA events, along with empowering blogs curated by women for women.</li>
+                        </ul>
+                     </li>
                   </ol>
                </section>
-               <section class="timeline">
+               <section class="timeline extra-section extra-section--cards">
                   <div class="title-wrapper">
                      <div class="icon-box">
                         <ion-icon name="star" class="volunteering-icon"></ion-icon>
                      </div>
                      <h3 class="h3">Position of Responsibilities</h3>
                   </div>
-                  <ul class="project-list position">
+                  <ul class="project-list position extra-image-grid">
                   <li class="project-item  active" data-filter-item data-category="web development">
                      <a href="#">
                         <figure class="project-img">
@@ -2187,15 +2198,16 @@
                         <h3 class="project-title">Cricket Captain</h3>
                      </a>
                   </li>
+                  </ul>
                </section>
-               <section class="timeline">
+               <section class="timeline extra-section extra-section--cards">
                   <div class="title-wrapper">
                      <div class="icon-box">
                         <ion-icon name="game-controller" class="volunteering-icon"></ion-icon>
                      </div>
                      <h3 class="h3">Hobbies</h3>
                   </div>
-                  <ul class="project-list hobbies">
+                  <ul class="project-list hobbies extra-image-grid extra-image-grid--hobbies">
                   <li class="project-item  active" data-filter-item data-category="web development">
                      <a href="#">
                         <figure class="project-img">
@@ -2260,6 +2272,7 @@
                         <h3 class="project-title">Cooking</h3>
                      </a>
                   </li>
+                  </ul>
                </section>
             </article>
             <!--
@@ -2269,32 +2282,36 @@
                <header>
                   <h2 class="h2 article-title">Contact</h2>
                </header>
+               <section class="contact-hero">
+                  <div>
+                     <p class="section-kicker">Open to backend, AI infrastructure, and platform roles</p>
+                     <h3 class="h3 contact-hero-title">Let’s connect if you’re building reliable systems.</h3>
+                     <p class="contact-hero-text">
+                        Based in Bengaluru, India. Best reached over email or LinkedIn for roles, collaborations, research discussions, and mentoring conversations.
+                     </p>
+                  </div>
+                  <div class="contact-hero-actions" aria-label="Primary contact links">
+                     <a class="contact-action contact-action--primary" href="mailto:harsh.kashyap2001@gmail.com?subject=Exciting%20Opportunity:%20Join%20Our%20Team%20and%20Connect!&body=Dear%20Harsh,%0D%0A%0D%0AI%20hope%20this%20email%20finds%20you%20well.%20I%20recently%20came%20across%20your%20impressive%20profile%20as%20a%20software%20engineer,%20and%20I%20must%20say,%20your%20experience%20and%20skills%20caught%20our%20attention.%0D%0A%0D%0AWe%20are%20always%20on%20the%20lookout%20for%20talented%20professionals%20like%20yourself%20who%20can%20contribute%20to%20our%20dynamic%20team.%20We%20believe%20that%20your%20expertise%20aligns%20perfectly%20with%20our%20company's%20goals%20and%20vision.%20After%20thoroughly%20reviewing%20your%20work%20and%20accomplishments,%20we%20are%20genuinely%20interested%20in%20connecting%20with%20you%20to%20discuss%20potential%20opportunities.%0D%0A%0D%0AWe%20admire%20your%20passion%20for%20software%20engineering%20and%20the%20exceptional%20projects%20you%20have%20undertaken.%20Our%20company%20values%20individuals%20who%20are%20motivated,%20innovative,%20and%20constantly%20seeking%20to%20push%20the%20boundaries%20of%20technology.%20We%20believe%20that%20you%20possess%20these%20qualities,%20and%20we%20would%20love%20to%20have%20you%20join%20our%20team.%0D%0A%0D%0AIf%20you%20are%20open%20to%20exploring%20new%20career%20prospects,%20we%20would%20be%20delighted%20to%20schedule%20a%20conversation%20with%20you%20at%20your%20convenience.%20We%20would%20like%20to%20discuss%20the%20exciting%20projects%20we%20are%20working%20on,%20as%20well%20as%20the%20opportunities%20for%20professional%20growth%20and%20development.%0D%0A%0D%0APlease%20let%20me%20know%20if%20you%20are%20interested%20in%20connecting,%20and%20we%20can%20arrange%20a%20call%20or%20a%20meeting.%20I%20am%20confident%20that%20our%20discussion%20will%20provide%20you%20with%20valuable%20insights%20into%20the%20possibilities%20that%20lie%20ahead.%0D%0A%0D%0AThank%20you%20for%20considering%20this%20opportunity.%20We%20eagerly%20await%20your%20response%20and%20the%20chance%20to%20connect%20with%20you%20further.%20If%20you%20have%20any%20questions%20in%20the%20meantime,%20please%20do%20not%20hesitate%20to%20reach%20out.%0D%0A%0D%0AWarm%20regards,">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        Mail
+                     </a>
+                     <a class="contact-action" href="https://www.linkedin.com/in/harsh-kashyap/" target="_blank" rel="noopener">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        LinkedIn
+                     </a>
+                  </div>
+               </section>
                <section class="mapbox" data-mapbox>
                   <div class="mapbox">
                      <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1128&amp;height=424&amp;hl=en&amp;q=Bengaluru&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div>
                      <style>.mapouter{position:relative;text-align:right;width:100%;height:424px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:424px;}.gmap_iframe {height:424px!important;}</style>
                   </div>
                </section>
-               <header style="display: flex; justify-content: space-between; align-items: center;">
-                  <h2 class="h2 article-title">Let's Connect</h2>
-                  <div class="container">
-                     <div class="column">
-                        <a href="mailto:harsh.kashyap2001@gmail.com?subject=Exciting%20Opportunity:%20Join%20Our%20Team%20and%20Connect!&body=Dear%20Harsh,%0D%0A%0D%0AI%20hope%20this%20email%20finds%20you%20well.%20I%20recently%20came%20across%20your%20impressive%20profile%20as%20a%20software%20engineer,%20and%20I%20must%20say,%20your%20experience%20and%20skills%20caught%20our%20attention.%0D%0A%0D%0AWe%20are%20always%20on%20the%20lookout%20for%20talented%20professionals%20like%20yourself%20who%20can%20contribute%20to%20our%20dynamic%20team.%20We%20believe%20that%20your%20expertise%20aligns%20perfectly%20with%20our%20company's%20goals%20and%20vision.%20After%20thoroughly%20reviewing%20your%20work%20and%20accomplishments,%20we%20are%20genuinely%20interested%20in%20connecting%20with%20you%20to%20discuss%20potential%20opportunities.%0D%0A%0D%0AWe%20admire%20your%20passion%20for%20software%20engineering%20and%20the%20exceptional%20projects%20you%20have%20undertaken.%20Our%20company%20values%20individuals%20who%20are%20motivated,%20innovative,%20and%20constantly%20seeking%20to%20push%20the%20boundaries%20of%20technology.%20We%20believe%20that%20you%20possess%20these%20qualities,%20and%20we%20would%20love%20to%20have%20you%20join%20our%20team.%0D%0A%0D%0AIf%20you%20are%20open%20to%20exploring%20new%20career%20prospects,%20we%20would%20be%20delighted%20to%20schedule%20a%20conversation%20with%20you%20at%20your%20convenience.%20We%20would%20like%20to%20discuss%20the%20exciting%20projects%20we%20are%20working%20on,%20as%20well%20as%20the%20opportunities%20for%20professional%20growth%20and%20development.%0D%0A%0D%0APlease%20let%20me%20know%20if%20you%20are%20interested%20in%20connecting,%20and%20we%20can%20arrange%20a%20call%20or%20a%20meeting.%20I%20am%20confident%20that%20our%20discussion%20will%20provide%20you%20with%20valuable%20insights%20into%20the%20possibilities%20that%20lie%20ahead.%0D%0A%0D%0AThank%20you%20for%20considering%20this%20opportunity.%20We%20eagerly%20await%20your%20response%20and%20the%20chance%20to%20connect%20with%20you%20further.%20If%20you%20have%20any%20questions%20in%20the%20meantime,%20please%20do%20not%20hesitate%20to%20reach%20out.%0D%0A%0D%0AWarm%20regards,">
-                           <div class="icon-box-mail">
-                              <i class="ion ion-email"></i> &nbsp;&nbsp;Mail
-                           </div>
-                        </a>
-                     </div>
-                  </div>
-               </header>
-               
-                  <!-- <a href="mailto:harsh.kashyap2001@gmail.com?subject=Interested%20in%20your%20profile&body=Lets%20connect">Click here to send an email</a> -->
-               </section>
-               <header>
+               <header class="contact-section-header">
+                  <p class="section-kicker">Profiles & booking links</p>
                   <h2 class="h2 article-title">Also View</h2>
                </header>
-               <section>
-               <section class="blog-posts">
+               <section class="blog-posts contact-links">
                   <ul class="blog-posts-list">
                   <li class="blog-post-item">
                      <a href="https://www.linkedin.com/in/harsh-kashyap/">
@@ -2352,6 +2369,7 @@
                         </div>
                      </a>
                   </li>
+                  </ul>
                </section>
             </article>
          </div>
