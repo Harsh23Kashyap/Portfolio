@@ -374,15 +374,15 @@
                   <div class="metric-card flip-card" tabindex="0">
                      <div class="flip-card-inner">
                         <div class="flip-card-front">
-                           <span class="metric-value">7K+</span>
-                           <span class="metric-label">GitHub Contributions</span>
-                           <span class="metric-sublabel">Harsh23Kashyap</span>
+                           <span class="metric-value">33+</span>
+                           <span class="metric-label">OSS Merged PRs</span>
+                           <span class="metric-sublabel">RAGFlow · Dify · Dify Plugins · Dify Sandbox · NDN</span>
                         </div>
                         <div class="flip-card-back">
                            <div class="metric-back-icons" aria-hidden="true">
                               <svg class="metric-icon metric-icon--lg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
                            </div>
-                           <p class="metric-back-text">40+ repos · Open source</p>
+                           <p class="metric-back-text">5 upstream OSS projects · 40+ repos</p>
                         </div>
                      </div>
                   </div>
@@ -392,7 +392,10 @@
                      I am a Software Engineer 2 at Apple with a strong background in Computer Science. I graduated from Thapar Institute of Engineering and Technology with a CGPA of 9.71, ranking in the top 0.5% and earning the TIET Merit Scholarship all four years. My work spans macOS tooling, 5G protocol testing, LLM-powered triage automation, multi-agent systems, and open-source reliability work across AI platforms.
                   </p>
                   <p>
-                     Previously, I worked at PayPal and completed internships at Apple, Tata 1mg, Cisco, Licious, and YASH Technologies. I also contribute to Dify and RAGFlow, and my research spans CustomNerd/NerdEngine at NYU, agentic job matching with Washington State University, NDN certificate revocation at UCLA, and Odyssey/DataFusion cost modeling at the University of Edinburgh.
+                     On the open-source side, I have contributed <b>33+ merged pull requests across 5 upstream projects</b> — including <b>RAGFlow, Dify, Dify Official Plugins, Dify Sandbox, and the NDN Go implementation</b> — with focused work on API reliability, retrieval correctness, plugin triggers, seccomp hardening, and trust schema validation.
+                  </p>
+                  <p>
+                     Previously, I worked at PayPal and completed internships at Apple, Tata 1mg, Cisco, Licious, and YASH Technologies. My research spans CustomNerd/NerdEngine at NYU under Professor Dennis Shasha, agentic job matching with Washington State University, NDN certificate revocation at UCLA under Professor Lixia Zhang, and Odyssey/DataFusion cost modeling at the University of Edinburgh under Professor Boris Grot.
                   </p>
                   <p>
                      Outside of work, I enjoy playing cricket, watching F1, going on treks, and working out at the gym. During college, I served as Vice Lead Ambassador of TICC and Placement Coordinator, building leadership and organizational skills alongside my technical work.
@@ -464,7 +467,7 @@
                         <div class="service-content-box">
                            <h4 class="h4 service-item-title">OSS backend reliability</h4>
                            <p class="service-item-text">
-                              Contributing focused fixes to <b>Dify and RAGFlow</b> across API validation, background job lifecycle, retrieval quality, retry behavior, and regression test coverage.
+                              Contributing focused fixes to <b>RAGFlow, Dify, Dify Official Plugins, Dify Sandbox, and NDN</b> across API validation, background job lifecycle, retrieval quality, plugin triggers, seccomp hardening, trust schema validation, and regression test coverage.
                            </p>
                         </div>
                      </li>
@@ -852,7 +855,13 @@
                               <span>| Odyssey Planner Cost Model</span>
                            </div>
                         </div>
-                        <p class="timeline-text">Early-stage Odyssey benchmarking work using Apache DataFusion and Parquet workloads to study planner-side runtime signals.</p>
+                        <p class="timeline-text">
+                        <ul class="white-dot">
+                           <li>Built a local Apache DataFusion benchmark harness across Parquet datasets of varying row scale, bytes, operator mix, compression, and row-group configurations.</li>
+                           <li>Trained a ridge-regression cost model to predict Parquet scan runtime from extracted planner-side features, then surfaced error-bounded estimates for the Odyssey planner.</li>
+                           <li>Packaged the work as a reproducible deliverable: regression scripts, dashboards, and a keynote brief for the supervisor meeting.</li>
+                        </ul>
+                        </p>
                      </li>
                   </ol>
                   <div class="title-wrapper" style="margin-top: 20px;">
@@ -864,15 +873,33 @@
                   <ol class="timeline-list timeline-list--minimal">
                      <li class="timeline-item timeline-item--compact">
                         <h4 class="h4 timeline-item-title">
-                           <a href="https://github.com/Harsh23Kashyap/dify" target="_blank" class="professor-link">Dify (LangGenius)</a>
+                           <a href="https://github.com/Harsh23Kashyap/ragflow" target="_blank" class="professor-link">RAGFlow (infiniflow)</a>
                         </h4>
-                        <p class="timeline-text">Focused API/web reliability fixes across workflow deletion, tracing payloads, pagination validation, Redis job lifecycle, and tests.</p>
+                        <p class="timeline-text">16+ merged PRs covering MinerU/Docling chunked-response handling, agent stream chunk shape, OpenAI response timestamps, RAPTOR clustering edge cases, Excel/HTML parsing, agent input coercion, lodash security bump, TuShare news filtering, time-utils fallback parsing, and XSS hardening in the agent rerun modal.</p>
                      </li>
                      <li class="timeline-item timeline-item--compact">
                         <h4 class="h4 timeline-item-title">
-                           <a href="https://github.com/Harsh23Kashyap/ragflow" target="_blank" class="professor-link">RAGFlow</a>
+                           <a href="https://github.com/Harsh23Kashyap/dify" target="_blank" class="professor-link">Dify (LangGenius)</a>
                         </h4>
-                        <p class="timeline-text">Small backend reliability patches for API errors, retrieval behavior, clustering bounds, retry semantics, and regression coverage.</p>
+                        <p class="timeline-text">API/web reliability fixes across invalid UTF-8 cache payloads, plugin external user IDs in backwards invocation, f-string error messages in resume_workflow_ex, document indexing error propagation, and testing-guide documentation link.</p>
+                     </li>
+                     <li class="timeline-item timeline-item--compact">
+                        <h4 class="h4 timeline-item-title">
+                           <a href="https://github.com/Harsh23Kashyap/dify-official-plugins" target="_blank" class="professor-link">Dify Official Plugins (LangGenius)</a>
+                        </h4>
+                        <p class="timeline-text">Outlook trigger support for monitoring shared mailboxes, Vertex AI Claude Sonnet 5 model support, and removal of unused GitHub datasource stub from the GitLab plugin.</p>
+                     </li>
+                     <li class="timeline-item timeline-item--compact">
+                        <h4 class="h4 timeline-item-title">
+                           <a href="https://github.com/Harsh23Kashyap/dify-sandbox" target="_blank" class="professor-link">Dify Sandbox (LangGenius)</a>
+                        </h4>
+                        <p class="timeline-text">Extended default seccomp whitelist and merged ALLOWED_SYSCALLS handling to keep runtime/utility syscalls available while preserving the security posture of the sandbox.</p>
+                     </li>
+                     <li class="timeline-item timeline-item--compact">
+                        <h4 class="h4 timeline-item-title">
+                           <a href="https://github.com/Harsh23Kashyap/ndnd" target="_blank" class="professor-link">NDN (named-data)</a>
+                        </h4>
+                        <p class="timeline-text">Security work on the certificate revocation record for the Go implementation of the Named Data Networking protocol stack.</p>
                      </li>
                   </ol>
                </section>
@@ -1579,7 +1606,206 @@
                            </div>
                         </a>
                      </li>
-                    
+
+                     <li class="project-item active" data-filter-item data-category="ai">
+                        <a href="https://github.com/Harsh23Kashyap/JobAgent">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/GithubPortfolio.png" alt="Resume Matcher AI platform" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">Production AI</span>
+                              </div>
+                              <h3 class="project-title">Resume Matcher</h3>
+                              <p class="project-summary">Production-grade AI resume-job matching system with multi-modal similarity, agentic negotiation, and 100% test coverage on FastAPI.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>Python</span>
+                                 <span>FastAPI</span>
+                                 <span>Multi-agent</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="project-item active" data-filter-item data-category="ai">
+                        <a href="https://github.com/Harsh23Kashyap/IPO-alert-bot">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/GithubPortfolio.png" alt="IPO alert bot" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">AI · Finance</span>
+                              </div>
+                              <h3 class="project-title">IPO Alert Bot</h3>
+                              <p class="project-summary">Gemini-powered tracker for live and upcoming Indian IPOs with price band, GMP, lot size, and issue-size details.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>Python</span>
+                                 <span>Gemini API</span>
+                                 <span>Finance</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="project-item active" data-filter-item data-category="automation">
+                        <a href="https://github.com/Harsh23Kashyap/Mailer">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/emailer.webp" alt="Mailer automation" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">Automation</span>
+                              </div>
+                              <h3 class="project-title">Research Mailer</h3>
+                              <p class="project-summary">Multi-mode automated email pipeline for research internships with template rotation and pacing to avoid spam filters.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>Python</span>
+                                 <span>SMTP</span>
+                                 <span>Anti-spam</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="project-item active" data-filter-item data-category="ai cli">
+                        <a href="https://github.com/Harsh23Kashyap/Ai-Terminal-2-GUI">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/AIterminal.png" alt="AI Terminal GUI" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">AI · GUI</span>
+                              </div>
+                              <h3 class="project-title">AI Terminal 2 — GUI</h3>
+                              <p class="project-summary">Glass-morphism desktop GUI for the AI Terminal: aliases, smart auto-completion, AI command analysis, and process/port/system tools.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>Shell</span>
+                                 <span>AI</span>
+                                 <span>GUI</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="project-item active" data-filter-item data-category="app development">
+                        <a href="https://github.com/Harsh23Kashyap/Readiculous">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/Everything Finance.png" alt="Readiculous PDF reader" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">iOS · AI</span>
+                              </div>
+                              <h3 class="project-title">Readiculous</h3>
+                              <p class="project-summary">Swift iOS PDF reader with semantic search, AI summaries, contextual Q&amp;A, and history tracking for the Gen Z reading flow.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>Swift</span>
+                                 <span>OpenAI</span>
+                                 <span>Semantic Search</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="project-item active" data-filter-item data-category="web development">
+                        <a href="https://github.com/Harsh23Kashyap/NerdMama">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/GithubPortfolio.png" alt="NerdMama homepage" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">Web</span>
+                              </div>
+                              <h3 class="project-title">NerdMama</h3>
+                              <p class="project-summary">Homepage for the Nerd Engine — the umbrella that powers CustomNerd, DietNerd, WirelessNerd, InvestorNerd, and friends.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>HTML</span>
+                                 <span>Branding</span>
+                                 <span>Landing</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="project-item active" data-filter-item data-category="web development">
+                        <a href="https://github.com/Harsh23Kashyap/ChromeWrapper">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/GithubPortfolio.png" alt="Chrome Wrapped extension" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">Extension</span>
+                              </div>
+                              <h3 class="project-title">Chrome Wrapped</h3>
+                              <p class="project-summary">Spotify-Wrapped style browser extension that summarizes top sites, time-zone patterns, and quirky browsing trends.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>JavaScript</span>
+                                 <span>Chrome API</span>
+                                 <span>Analytics</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="project-item active" data-filter-item data-category="system design">
+                        <a href="https://github.com/Harsh23Kashyap/LLD">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/Java.png" alt="LLD practice workspace" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">System Design</span>
+                              </div>
+                              <h3 class="project-title">LLD &amp; Java Fundamentals</h3>
+                              <p class="project-summary">Practice workspace covering SOLID, UML, creational/structural/behavioural patterns, concurrency, and Java fundamentals.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>Java</span>
+                                 <span>Design Patterns</span>
+                                 <span>Concurrency</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="project-item active" data-filter-item data-category="web development">
+                        <a href="https://github.com/Harsh23Kashyap/point-palace-india">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/GithubPortfolio.png" alt="Point Palace India" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">Web</span>
+                              </div>
+                              <h3 class="project-title">Point Palace India</h3>
+                              <p class="project-summary">TypeScript web experience for Point Palace India, built on Lovable with synced GitHub-backed deployment.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>TypeScript</span>
+                                 <span>Lovable</span>
+                                 <span>Web</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+
                      <li class="project-item active" data-filter-item data-category="github">
                         <a href="https://github.com/Harsh23Kashyap">
                            <figure class="project-img">
