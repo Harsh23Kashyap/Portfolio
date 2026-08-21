@@ -1494,6 +1494,14 @@ article.resume .timeline-item--compact .timeline-text {
    line-height: 1.55;
 }
 
+/* Open Source row: simpleicons Dify wordmark is black-on-transparent; invert in dark mode */
+article.resume .timeline-item--compact img[alt^="Dify"] {
+   filter: brightness(0) invert(1);
+}
+:root.light-mode article.resume .timeline-item--compact img[alt^="Dify"] {
+   filter: none;
+}
+
 article.resume .skills-list.content-card,
 article.resume .skill-categories.content-card {
    background: transparent;
