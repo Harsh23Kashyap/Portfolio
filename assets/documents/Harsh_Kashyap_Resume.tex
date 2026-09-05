@@ -1,0 +1,224 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=0.34in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{microtype}
+
+\definecolor{ink}{HTML}{151515}
+\definecolor{linkblue}{HTML}{0563C1}
+
+\hypersetup{
+  pdftitle={Harsh Kashyap -- Resume},
+  pdfauthor={Harsh Kashyap},
+  pdfsubject={Software Development Engineer -- Resume},
+  pdfkeywords={Harsh Kashyap, Software Engineer, Amazon, Apple, AI, ML}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\renewcommand{\familydefault}{\sfdefault}
+\color{ink}
+\AtBeginDocument{\fontsize{8.7}{9.45}\selectfont}
+
+\titleformat{\section}
+  {\normalsize\bfseries\uppercase}
+  {}
+  {0pt}
+  {}
+  [\vspace{-2pt}\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+\setlist[itemize]{
+  leftmargin=1.15em,
+  itemsep=0.2pt,
+  topsep=0.2pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\contactsep}{\hspace{0.45em}$\vert$\hspace{0.45em}}
+\newcommand{\metric}[1]{\textbf{\textit{#1}}}
+\newcommand{\tech}[1]{\textbf{#1}}
+\newcommand{\project}[1]{\textbf{#1}}
+\newcommand{\entry}[4]{%
+  \textbf{\underline{#1}}\hfill\textit{#3}\\%
+  \textit{#2}\hfill \textit{#4}\vspace{-1pt}%
+}
+\newcommand{\researchentry}[2]{%
+  \textbf{\underline{#1}}\\%
+  \textit{#2}\vspace{-1pt}%
+}
+
+\begin{document}
+
+\begin{center}
+  {\Large \textbf{Harsh Kashyap}}\\
+  Bengaluru, India \contactsep +91 80516 25669\\
+  \href{mailto:harsh.kashyap2001@gmail.com}{harsh.kashyap2001@gmail.com}
+  \contactsep
+  \href{https://www.linkedin.com/in/harsh-kashyap}{linkedin.com/in/harsh-kashyap}
+  \contactsep
+  \href{https://github.com/Harsh23Kashyap}{github.com/Harsh23Kashyap}
+  \contactsep
+  \href{https://harshkashyapportfolio.netlify.app}{harshkashyapportfolio.netlify.app}
+\end{center}
+
+\section{Objective}
+Driven \textbf{Software Development Engineer at Amazon} with 3+ years building AI platforms and cellular-protocol systems at Apple. Seeking an \textbf{MS in Computer Science} focused on \textbf{AI/ML and large-scale distributed systems}, with the goal of growing into a \textbf{Machine Learning Infrastructure Engineer} building reliable, high-performance systems for large-scale AI and data platforms.
+
+\section{Education}
+\entry{Thapar Institute of Engineering \& Technology}{B.E., Computer Science; Minor: Data Science}{Aug 2019 -- Jun 2023}{Patiala, India}
+\metric{CGPA: 9.71/10}. Coursework: \tech{Machine Learning}, \tech{Data Science}, Operating Systems, DBMS, Computer Networks, Computer Architecture, Data Structures \& Algorithms, OOP, High- and Low-Level System Design.
+
+\section{Professional Experience}
+\entry{Amazon}{Software Development Engineer II}{Jul 2026 -- Present}{Bengaluru, India}
+\begin{itemize}
+  \item Built \project{Unified Compliance Intelligence}, a compliance-assistance platform for \tech{Amazon Marketplace} that flags non-compliant product listings and gives sellers clear explanations of violations, affected products, and required documentation updates.
+  \item Built backend services with \tech{Java}, \tech{Coral}, \tech{ECS Fargate}, and \tech{Amazon Bedrock}, using \tech{Claude/Sonnet} workflows to translate policy and product signals into \metric{auditable compliance guidance}.
+\end{itemize}
+
+\entry{Apple}{Software Engineer II}{Dec 2023 -- Jun 2026}{Bengaluru, India}
+\begin{itemize}
+  \item Built and shipped a native \tech{macOS SwiftUI} application for \tech{LTE/5G-NR protocol-message authoring}, replacing fragmented ASN.1 and terminal workflows for \metric{600+ engineers}, driving \metric{80\% adoption} and saving about \metric{\$720K annually}.
+  \item Designed a \project{protocol-aware pre-validation framework} for interdependent LTE/5G-NR message fields, cutting debug time from \metric{20 minutes to under 2 minutes} and improving incident MTTR by \metric{40\%} through automated fix recommendations.
+  \item Architected a \project{production AI engineering platform} with \tech{3GPP-grounded hybrid retrieval}, \tech{multi-agent orchestration}, \tech{Jenkins CI/CD}, and \tech{Docker} for protocol engineering, log analysis, and incident triage across \metric{8 teams and 700+ monthly incidents}.
+  \item Led end-to-end bring-up of a \project{cellular conformance-testing lab} with iPhone and USRP X410/B210 setups, using \tech{Python automation} to reduce setup from \metric{2--3 weeks to under 2 days} and make deployments repeatable.
+  \item Led the \tech{AI/ML subsystem} of a greenfield \tech{LTE Layer-2 code-generation} initiative across MAC, RLC, and PDCP, coordinating \metric{56 agents} and domain experts to generate and validate \metric{100K+ lines of C/C++}.
+  \item Built a \project{3GPP knowledge platform} that improved retrieval accuracy \metric{32\%} over a leading commercial AI system, surfaced \metric{26+ specification-reference errors}, and mentored \metric{2 interns} on an AI workspace optimizer.
+\end{itemize}
+
+\entry{PayPal}{Software Engineer}{Jul 2023 -- Oct 2023}{Bengaluru, India}
+\begin{itemize}
+  \item Improved the \project{Global Merchant Lending admin tool}, driving about \metric{13\% audit-efficiency gain} by automating manual workflows with \tech{React}, \tech{Node.js}, and internal PayPal frameworks in a CECL-compliance context.
+  \item Delivered the work end-to-end in a small pod, coordinating with \tech{Finance, Risk, and Compliance} stakeholders to meet a regulatory deadline with \metric{audit-trail coverage}.
+\end{itemize}
+
+\section{Startup Experience}
+\entry{Neatlogs}{Open-source observability platform for AI agents and LLM applications}{}{Python, TypeScript, Go, OpenTelemetry}
+\begin{itemize}
+  \item Hardened \tech{TypeScript SDK} transport behavior to prevent duplicate API writes after network failures; validated \metric{5,350 fault-injected mutations with zero replays} across packaged \tech{Node.js} consumers.
+  \item Qualified \tech{Python and TypeScript SDKs}, instrumentation Wizard, standalone Skills, and setup docs; built deterministic harnesses for \tech{streaming}, tool calls, workflow hierarchy, errors, cancellation, privacy masking, concurrency, lifecycle management, endpoint isolation, and trace-replay diagnostics.
+\end{itemize}
+
+\section{Internship Experience}
+\entry{Apple}{Software Engineering Intern}{Jan 2023 -- Jun 2023}{Hyderabad, India}
+\begin{itemize}
+  \item Built an internal \project{observability SPA} with \tech{React}, \tech{Tailwind CSS}, \tech{Spring Boot}, and \tech{Splunk}, adding real-time dashboards that automated recurring health checks and cut support turnaround by \metric{83\%}.
+  \item Designed and deployed an \tech{XGBoost SLA-resolution predictor} with feature engineering, reaching \metric{80\%+ accuracy} and reducing SLA breaches by \metric{25\%} across IS\&T incidents.
+\end{itemize}
+
+\entry{Tata 1mg}{Engineering Intern}{Oct 2022 -- Nov 2022}{Gurugram, India}
+\begin{itemize}
+  \item Engineered asynchronous task scheduling with \tech{Asyncio}, \tech{Celery}, and \tech{RabbitMQ}, offloading long-running jobs and streamlining operations for \metric{3,000+ employees}, with projected benefit for \metric{4M+ customers}.
+\end{itemize}
+
+\entry{Cisco}{Technical Undergraduate Intern}{Jun 2022 -- Jul 2022}{Bengaluru, India}
+\begin{itemize}
+  \item Built \tech{Python} pipelines for \tech{SD-WAN telemetry} and surfaced QoS metrics such as latency, jitter, and packet loss on an internal dashboard, improving network-ops triage efficiency by \metric{23.2\%}.
+\end{itemize}
+
+\entry{Licious}{Software Developer Intern}{Jan 2022 -- May 2022}{Bengaluru, India}
+\begin{itemize}
+  \item Migrated sections of the application from \tech{Swift} to \tech{Flutter}, refactoring \metric{5,000+ lines}, preserving feature parity, and reducing estimated engineering effort by about \metric{30\%}.
+\end{itemize}
+
+\entry{YASH Technologies}{Software Engineering Intern}{Jul 2021 -- Sep 2021}{Hyderabad, India}
+\begin{itemize}
+  \item Built an \project{Employee Management System} portal with \tech{Java}, \tech{Spring Boot}, \tech{SQL}, and \tech{REST APIs} for employee records, attendance, and leave management for \metric{6,000+ daily users}.
+\end{itemize}
+
+\section{Research Experience}
+\researchentry{University of Edinburgh}{Prof. Boris Grot}
+\begin{itemize}
+  \item Built an explainable \project{pre-execution runtime cost model} for \tech{Apache DataFusion} and \tech{Parquet} query planning, capturing operator-specific scaling across \metric{704 query/dataset pairs} and enabling cost-aware serverless execution.
+\end{itemize}
+
+\researchentry{New York University}{Prof. Dennis Shasha}
+\begin{itemize}
+  \item Built \project{CustomNerd/NerdEngine}, a config-first no-code framework for domain-specific \tech{RAG assistants} with a \metric{9-stage pipeline}, curated retrieval, prompt refinement, citation generation, saved-state deployment, and \metric{6+ domain variants}.
+  \item Re-architected the backend to serverless \tech{AWS Lambda/S3} with caching and provenance safeguards, reducing cost by about \metric{70\%}, scaling from one lab to \metric{10+ research labs}, and benchmarking CloudNerd on a \metric{120-question retrieval benchmark}.
+\end{itemize}
+
+\researchentry{Washington State University}{Prof. Parteek Kumar}
+\begin{itemize}
+  \item Co-designed \project{JobMatch}, a role-separated \tech{multi-agent system} for explainable job-candidate matching, combining semantic search, a \metric{6-signal composite ranker}, explanation panels, and a CI regression gate.
+\end{itemize}
+
+\researchentry{University of California, Los Angeles}{Prof. Lixia Zhang; Named Data Networking}
+\begin{itemize}
+  \item Contributed \project{certificate-revocation and trust-validation support} to the public \tech{Go} implementation of \tech{Named Data Networking}, adding Revoke/IsRevoked APIs, process-local revocation records, and trust-schema validation.
+\end{itemize}
+
+\researchentry{University of British Columbia}{Prof. L.A.K.S.; ScientficPerplexity}
+\begin{itemize}
+  \item Contributing to \project{ScientficPerplexity}, an \tech{LLM-driven scientific-literature query system}; refactored the LLM layer into a provider-agnostic client across \metric{16 providers} with typed configuration and cleaner provider boundaries.
+\end{itemize}
+
+\section{Publications}
+\begin{itemize}
+  \item \textit{\textbf{CustomNerd: A Framework and Tool for Fast Deployment of Production-Ready Expertise-Based QA Systems}}. MDPI Electronics. \metric{First author}; accepted for publication.
+  \item \textit{\textbf{JobMatch: An Agentic Multi-Role Platform for Explainable Job-Candidate Matching}}. Autonomous Agents and Multi-Agent Systems. \metric{Co-first author}; in preparation.
+  \item \textit{InvestorNerd} and \textit{NewsNerd}. Domain-specific grounded-AI assistants at NYU. Contributing author; in preparation.
+\end{itemize}
+
+\section{Projects \& Open Source}
+\begin{itemize}
+  \item \project{ENCELA -- self-hosted personal-cloud platform}: building a multi-service backend with \metric{100 GB Drive storage}, real-time chat, an office suite, Git repository hosting, and a companion Android client.
+  \item \project{Dify \& RAGFlow}: contributed reliability improvements to leading open-source \tech{AI/RAG platforms} across backend APIs, document-processing pipelines, search correctness, retry behavior, test coverage, stored-XSS sanitization, sandbox hardening, dependency updates, and new model support.
+  \item \project{Resume Matcher}: built an AI resume-job matching system with \tech{FastAPI}, multi-modal similarity scoring, agentic negotiation, structured ranking explanations, and automated validation for matching quality.
+  \item \project{Research Mailer}: built a multi-mode outreach automation pipeline with template rotation, pacing controls, browser automation, and delivery safeguards for research-internship communication workflows.
+  \item \project{AI Terminal \& CodeClue}: built developer-facing AI tools for command assistance, coding hints, smart auto-completion, process/port utilities, and natural-language workflow support.
+  \item \project{Placement and analytics dashboards}: built \tech{Streamlit} and web dashboards for placement records, company analytics, filtering, trend exploration, and outcome visualization.
+\end{itemize}
+
+\section{Selected Technical Strengths}
+\begin{itemize}
+  \item Comfortable owning \metric{ambiguous systems work end-to-end}: requirement discovery, backend design, UI workflow design, validation harnesses, stakeholder iteration, launch support, and operational debugging.
+  \item Strong \tech{applied-AI engineering} focus across RAG evaluation, provider abstraction, agent orchestration, failure-mode testing, trace observability, ranking systems, and human-readable explanations.
+  \item Built and maintained learning resources across \tech{core CS, system design, DSA, GRE preparation, and interview workflows}; uses notes and tooling to teach concepts clearly and mentor other students and engineers.
+\end{itemize}
+
+\section{Additional Engineering Artifacts}
+\begin{itemize}
+  \item Maintains a public portfolio of engineering notes covering \tech{operating systems}, \tech{DBMS}, computer networks, OOP, concurrency, \tech{system design}, DSA patterns, and interview preparation.
+  \item Built practical automation utilities for \tech{browser workflows}, ticket monitoring, email workflows, podcast organization, personal finance tracking, weather views, and mobile-style health calculators.
+  \item Built public web experiences and deployment-backed prototypes with \tech{TypeScript}, \tech{React}, \tech{Streamlit}, \tech{Selenium}, Lovable, GitHub-backed publishing, and responsive UI patterns.
+  \item Uses project writeups, source links, certificates, and mentoring material to turn implementation work into reusable proof for recruiters, collaborators, students, and engineering reviewers.
+\end{itemize}
+
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{1.35in}X@{}}
+Languages & \textbf{Python}, \textbf{Java}, C/C++, Go, JavaScript/TypeScript, SQL\\
+Backend \& Web & Spring Boot, \textbf{FastAPI}, Flask, Node.js, REST APIs, React, Tailwind CSS, SwiftUI, Flutter\\
+Cloud \& Infra & \textbf{AWS EC2, S3, Lambda}, DynamoDB, SES, Docker, Jenkins, CI/CD, Cloudflare, Redis, RabbitMQ\\
+Data \& AI & \textbf{RAG}, \textbf{multi-agent systems}, FAISS, Chroma, Qdrant, SentenceTransformers, XGBoost, TensorFlow/Keras, Apache DataFusion, Parquet\\
+Tools & Git, GitHub, pytest, Postman, Splunk, Shell scripting
+\end{tabularx}
+
+\section{Certifications}
+\begin{itemize}
+  \item \textbf{Machine Learning Specialization} and \textbf{Deep Learning Specialization}, DeepLearning.AI / Andrew Ng; Cisco CCNA; Splunk; SwiftUI.
+  \item \href{https://drive.google.com/file/d/15i68a5YuADLoaKJDZuCyz88tcQldIJK9/view?usp=sharing}{\textbf{Apple experience certificate}}; additional professional, internship, and project certificates maintained in the portfolio certificate archive.
+  \item Continued self-directed learning across \tech{distributed systems}, \tech{ML infrastructure}, observability, retrieval systems, cloud architecture, and engineering leadership.
+\end{itemize}
+
+\section{Awards, Leadership \& Community}
+\begin{itemize}
+  \item \metric{TIET Merit Scholarship} recipient, ranking in the \metric{top 0.5\%} of the cohort across all four undergraduate years.
+  \item Ranked \metric{89th out of 100,000 students} in the AICTE IICC coding competition; featured in Apple's Innovation Deck for an Apple Pay rewards concept selected from \metric{350+ submissions}.
+  \item \metric{LinkedIn Top Voice} in Computer Science and Software Engineering with about \metric{40K followers}; solved \metric{1,700+ LeetCode problems} with contest rating around \metric{1,693}.
+  \item Vice Lead Ambassador, Thapar Counselling Cell: led about \metric{100 ambassadors} and a campus-wide mental-health awareness campaign; Placement Coordinator for \metric{2,000+ students and 30+ companies}.
+  \item Built student-facing and community-facing systems including an IDIA volunteer application, counselling-cell outreach workflows, and placement coordination artifacts.
+  \item Community: DiiDi mentoring for education of underprivileged girls; IDIA member/volunteer app; active mentoring through Topmate with \metric{450+ bookings and 50+ testimonials}. Languages: English and Hindi.
+\end{itemize}
+
+\end{document}
