@@ -133,6 +133,19 @@ function refreshPageReveal(page) {
   });
 }
 
+function revealVisiblePageContent(page) {
+  if (!page) return;
+
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  page.querySelectorAll(".reveal-on-scroll").forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < viewportHeight + 80 && rect.bottom > -80) {
+      el.classList.add("revealed");
+      scrollRevealObserver?.unobserve(el);
+    }
+  });
+}
+
 function initTestimonialsModal() {
   const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
   const modalContainer = document.querySelector("[data-modal-container]");
@@ -305,8 +318,9 @@ function initCoreInteractions() {
         if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
           pages[j].classList.add("active");
           navigationLinks[j].classList.add("active");
+          window.scrollTo({ top: 0, behavior: "auto" });
           refreshPageReveal(pages[j]);
-          window.scrollTo({ top: 0, behavior: "smooth" });
+          requestAnimationFrame(() => revealVisiblePageContent(pages[j]));
         } else {
           pages[j].classList.remove("active");
           navigationLinks[j].classList.remove("active");
