@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Cisco</title>
+  <desc id="desc">Compact Cisco icon for the metrics card.</desc>
+  <rect width="64" height="64" rx="14" fill="#f2f2f2"/>
+  <g fill="#1f1f1f">
+    <rect x="15" y="23" width="3" height="9" rx="1.5"/>
+    <rect x="21" y="19" width="3" height="13" rx="1.5"/>
+    <rect x="27" y="15" width="3" height="17" rx="1.5"/>
+    <rect x="34" y="19" width="3" height="13" rx="1.5"/>
+    <rect x="40" y="23" width="3" height="9" rx="1.5"/>
+    <rect x="46" y="20" width="3" height="12" rx="1.5"/>
+  </g>
+  <text x="32" y="47" fill="#1f1f1f" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">CISCO</text>
+</svg>

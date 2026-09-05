@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Amazon</title>
+  <desc id="desc">Compact Amazon icon for the metrics card.</desc>
+  <rect width="64" height="64" rx="14" fill="#E8C547"/>
+  <text x="31.5" y="37" fill="#1f1f1f" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="middle">a</text>
+  <path d="M20 45c8 5 19 5 28 0" fill="none" stroke="#1f1f1f" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M43 42l8 2-5 6" fill="none" stroke="#1f1f1f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">PayPal</title>
+  <desc id="desc">Compact PayPal icon for the metrics card.</desc>
+  <rect width="64" height="64" rx="14" fill="#f2f2f2"/>
+  <path fill="#27346A" d="M21 14h17c7.2 0 11.5 4 10.5 10.4-1.2 8-6.6 12.4-15 12.4h-5.1L26.7 48H16.8L21 14Z"/>
+  <path fill="#2790C3" d="M27.6 24h16.2c6.1 0 9.2 3.5 8.1 9.5C50.5 41 45.3 45 37.5 45h-5.2L30.8 55H21l6.6-31Z"/>
+  <path fill="#1F264F" d="M28.4 36.8h5.1c8.4 0 13.8-4.4 15-12.4.1-.7.2-1.4.2-2 3.1 1.6 4.3 5 3.2 11.1C50.5 41 45.3 45 37.5 45h-5.2L30.8 55H21l2.9-13.8a5.3 5.3 0 0 1 4.5-4.4Z"/>
+</svg>
