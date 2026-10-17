@@ -334,3 +334,17 @@ function initCoreInteractions() {
 
 document.addEventListener("DOMContentLoaded", initCoreInteractions);
 document.addEventListener("portfolio:rendered", initProjectFilters);
+
+/* Image fade-in: marks lazy images and reveals each when it finishes loading */
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
+    img.classList.add("img-fade");
+    if (img.complete && img.naturalWidth > 0) {
+      img.classList.add("img-loaded");
+      return;
+    }
+    img.addEventListener("load", () => img.classList.add("img-loaded"), { once: true });
+    img.addEventListener("error", () => img.classList.add("img-loaded"), { once: true });
+  });
+});

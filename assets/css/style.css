@@ -4233,3 +4233,66 @@ article .timeline a.custom-link {
    background: hsl(0, 0%, 87%);
    color: hsl(0, 0%, 25%);
 }
+
+/* CTA buttons in the sidebar */
+.cta-row {
+   display: flex;
+   gap: 10px;
+   margin-top: 18px;
+}
+
+.cta-btn {
+   flex: 1;
+   text-align: center;
+   padding: 10px 14px;
+   border-radius: 10px;
+   font-size: 14px;
+   font-weight: 500;
+   text-decoration: none;
+   transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cta-btn--primary {
+   background: var(--orange-yellow-crayola);
+   color: var(--smoky-black);
+}
+
+.cta-btn--primary:hover { background: var(--vegas-gold); }
+
+.cta-btn--ghost {
+   background: transparent;
+   border: 1px solid var(--vegas-gold);
+   color: var(--orange-yellow-crayola);
+}
+
+.cta-btn--ghost:hover { background: var(--onyx); }
+
+/* Site footer */
+.site-footer {
+   text-align: center;
+   padding: 24px 0 16px;
+   color: var(--light-gray-70);
+   font-size: 13px;
+}
+
+.site-footer-link {
+   color: var(--vegas-gold);
+   text-decoration: none;
+}
+
+.site-footer-link:hover { text-decoration: underline; }
+
+/* Image fade-in once loaded (real load events only) */
+img.img-fade {
+   opacity: 0;
+   transition: opacity 0.4s ease;
+}
+
+img.img-fade.img-loaded { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+   img.img-fade {
+      opacity: 1;
+      transition: none;
+   }
+}
