@@ -4270,9 +4270,9 @@ article .timeline a.custom-link {
 /* Site footer */
 .site-footer {
    text-align: center;
-   padding: 24px 0 16px;
+   padding: 14px 0 4px;
    color: var(--light-gray-70);
-   font-size: 13px;
+   font-size: 12px;
 }
 
 .site-footer-link {
