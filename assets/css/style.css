@@ -4296,3 +4296,8 @@ img.img-fade.img-loaded { opacity: 1; }
       transition: none;
    }
 }
+
+@media (max-width: 768px) {
+   .sidebar-info { flex-wrap: wrap; }
+   .cta-row { flex-basis: 100%; margin-top: 12px; }
+}
