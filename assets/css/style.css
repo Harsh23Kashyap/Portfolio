@@ -4275,13 +4275,6 @@ article .timeline a.custom-link {
    font-size: 12px;
 }
 
-.site-footer-link {
-   color: var(--vegas-gold);
-   text-decoration: none;
-}
-
-.site-footer-link:hover { text-decoration: underline; }
-
 /* Image fade-in once loaded (real load events only) */
 img.img-fade {
    opacity: 0;
