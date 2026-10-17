@@ -4297,7 +4297,10 @@ img.img-fade.img-loaded { opacity: 1; }
    }
 }
 
-@media (max-width: 768px) {
-   .sidebar-info { flex-wrap: wrap; }
-   .cta-row { flex-basis: 100%; margin-top: 12px; }
+
+.cta-row--mobile { display: none; margin: 0 0 18px; }
+@media (max-width: 580px) {
+   .cta-row--sidebar { display: none; }
+   .cta-row--mobile { display: flex; }
+   .cta-row--mobile .cta-btn { flex: 1; text-align: center; justify-content: center; }
 }
