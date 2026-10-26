@@ -843,6 +843,7 @@
                            <li>Builds the instrumentation SDKs (Python, TypeScript, Go) that turn LLM and agent calls into OpenTelemetry traces.</li>
                            <li>38 pull requests across the three SDKs: spans left open on cancellation, tool definitions and response candidates that providers were dropping, config handling aligned across all three languages.</li>
                            <li>Covers OpenAI, Vertex, Google ADK, CrewAI, Agno, Pydantic AI, AutoGen, Portkey, and Strands.</li>
+                           <li>Contributed backend reliability fixes to Neatroots, including recovery for runs that never receive an end event and API validation for snapshots and annotations referencing missing runs or spans. Added focused regression coverage and worked through maintainer review. (<a href="https://github.com/neatlogs/neatroots/pull/592" target="_blank" rel="noopener noreferrer" class="custom-link" style="color: var(--vegas-gold);">#592</a>, <a href="https://github.com/neatlogs/neatroots/pull/541" target="_blank" rel="noopener noreferrer" class="custom-link" style="color: var(--vegas-gold);">#541</a>, <a href="https://github.com/neatlogs/neatroots/pull/538" target="_blank" rel="noopener noreferrer" class="custom-link" style="color: var(--vegas-gold);">#538</a>)</li>
                         </ul>
                         </p>
                      </li>
@@ -871,7 +872,7 @@
                            <li>Built CustomNerd/NerdEngine, a framework for domain-specific AI assistants, and grew it into a family spanning PubMed, 3GPP, finance, cloud, news, and astronomy.</li>
                            <li>Lead author of the MDPI <em>Electronics</em> paper (2026). Runs on AWS (EC2, S3, Cloudflare, OTP login).</li>
                            <li>Designed the 9-stage RAG pipeline and CloudNerd's cascade retrieval. The citation-recovery fix took scorable answers from 6 out of 20 to 20 out of 20.</li>
-                           <li>In a 120-question Stack Overflow test, CloudNerd beat both baseline systems (ODR and AutoGPT) on every quality metric, all wins statistically significant, 120/120 answered with zero failures.</li>
+                           <li>Evaluated CloudNerd on 120 Stack Overflow questions against OpenDeepResearch and AutoGPT. CloudNerd led on semantic textual similarity and answer similarity, while OpenDeepResearch led on faithfulness and answer relevancy.</li>
                         </ul>
                         </p>
                      </li>
@@ -908,6 +909,7 @@
                         <ul class="white-dot">
                            <li>Shipped certificate revocation for <a href="https://github.com/Harsh23Kashyap/ownly" target="_blank" class="custom-link" style="color: var(--vegas-gold);">Ownly</a>, an NDN-based collaborative PWA: Go WASM codec, TypeScript bridge, Vue UI, RFC 5280 wire format.</li>
                            <li>Contributed revocation and trust-validation primitives to <a href="https://github.com/named-data/ndnd" target="_blank" class="custom-link" style="color: var(--vegas-gold);">ndnd</a>, the Go implementation of Named Data Networking.</li>
+                           <li>Extended certificate-revocation support with persistent revocation records and resolution in ndnd; the upstream change was <a href="https://github.com/named-data/ndnd/pull/224" target="_blank" rel="noopener noreferrer" class="custom-link" style="color: var(--vegas-gold);">merged</a> in October 2026.</li>
                         </ul>
                         </p>
                      </li>
@@ -1903,6 +1905,72 @@
                         </a>
                      </li>
 
+                     <li class="project-item active" data-filter-item data-category="ai">
+                        <a href="https://protocolnerd.org">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/GithubPortfolio.png" alt="ProtocolNerd - Scientific Protocol Discovery" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">AI</span>
+                              </div>
+                              <h3 class="project-title">ProtocolNerd - Scientific Protocol Discovery</h3>
+                              <p class="project-summary">Built a research assistant that turns an experiment description into a structured profile, asks for missing details, and ranks relevant protocols and papers with explanations of fit and limitations. It combines keyword and semantic retrieval with re-ranking, with biology and chemistry domain modules.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>Retrieval</span>
+                                 <span>Re-ranking</span>
+                                 <span>Python</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="project-item active" data-filter-item data-category="machine learning">
+                        <a href="https://github.com/Harsh23Kashyap/AnomalyNerd">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/GithubPortfolio.png" alt="AnomalyNerd - Research Results Table Checks" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">Machine Learning</span>
+                              </div>
+                              <h3 class="project-title">AnomalyNerd - Research Results Table Checks</h3>
+                              <p class="project-summary">Built a Python tool that scans research-results tables for numeric jumps, outliers, level shifts, monotonicity breaks, win reversals, duplicates and unexpected trends. It ranks findings for human review and provides command-line and JSON output. The tool flags where to investigate; it does not diagnose causes or establish that a result is wrong.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>Python</span>
+                                 <span>CLI</span>
+                                 <span>JSON</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="project-item active" data-filter-item data-category="web development">
+                        <a href="https://harsh23kashyap.github.io/HomeNerd/">
+                           <figure class="project-img">
+                              <div class="project-item-icon-box">
+                                 <ion-icon name="eye-outline"></ion-icon>
+                              </div>
+                              <img src="./assets/images/GithubPortfolio.png" alt="HomeNerd - Research Project Hub" loading="lazy">
+                           </figure>
+                           <div class="project-card-content">
+                              <div class="project-meta">
+                                 <span class="project-badge">Web</span>
+                              </div>
+                              <h3 class="project-title">HomeNerd - Research Project Hub</h3>
+                              <p class="project-summary">Built and deployed a shared homepage for the Nerd family of research tools, with project cards, a people page, keyboard navigation and reduced-motion support. The hub separates live destinations from prototypes and work in progress.</p>
+                              <div class="project-tags" aria-label="Technologies used">
+                                 <span>HTML</span>
+                                 <span>JavaScript</span>
+                                 <span>GitHub Pages</span>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
                      <li class="project-item active" data-filter-item data-category="github">
                         <a href="https://github.com/Harsh23Kashyap">
                            <figure class="project-img">
